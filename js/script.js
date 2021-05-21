@@ -216,7 +216,7 @@ var old_y = 0;
 var x;
 var y;
 var globalCompositeOperation  = 'source-over';
-var selectColor = "#3f484e";
+var selectColor = "#0b141a";
 var selectSize = 5;
 var selectEmoji = '';
 
@@ -234,7 +234,7 @@ var ctx=new Array(6);
 for(var i=0;i<6;i++){
   ctx[i]=canvas[i].getContext('2d');
   ctx[i].lineWidth=4;
-  ctx[i].strokeStyle="#e01454";
+  ctx[i].strokeStyle="#0b141a";
 }
 
 
@@ -532,7 +532,7 @@ $('.Mtab6').on('click',function () {
     selectSize=5;
   });
   $('.blackP').on('click',function () {
-    selectColor="#3f484e";
+    selectColor="#0b141a";
     $('.col').removeClass('add_col_choice');
     if(!$(this).hasClass('add_col_choice')){
       $(this).addClass('add_col_choice');

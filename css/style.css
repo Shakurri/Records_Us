@@ -121,7 +121,7 @@ body {
 }
 
 .player_tab .page .joinBox div img {
-  width: 40%;
+  width: 32%;
 }
 
 .player_tab .page .joinBox span {
@@ -384,7 +384,7 @@ body {
 }
 
 .map_tab .page .paintBox .colorBox .blackP {
-  background-color: #3f484e;
+  background-color: #0b141a;
 }
 
 .map_tab .page .paintBox .colorBox .blueP {
