@@ -642,16 +642,16 @@ $('.Mtab6').on('click',function () {
   });
 
   $('.skeldChange').on('click',function(){
-    $('.mapBox').attr('src', 'image/skeldMap.PNG');
+    $('.mapBox').attr('src', 'image/skeldMap.png');
   });
   $('.mirahqChange').on('click',function(){
-    $('.mapBox').attr('src', 'image/mirahqMap.PNG');
+    $('.mapBox').attr('src', 'image/mirahqMap.png');
   });
   $('.polusChange').on('click',function(){
-    $('.mapBox').attr('src', 'image/polusMap.PNG');
+    $('.mapBox').attr('src', 'image/polusMap.png');
   });
   $('.airshipChange').on('click',function(){
-    $('.mapBox').attr('src', 'image/airshipMap.PNG');
+    $('.mapBox').attr('src', 'image/airshipMap.png');
   });
 
 
