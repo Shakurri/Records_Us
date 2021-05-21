@@ -1,0 +1,608 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'yasashisa';
+  src: url(../font/07やさしさゴシック.ttf);
+}
+
+@font-face {
+  font-family: 'rogotype';
+  src: url(../font/ロゴたいぷゴシック.otf);
+}
+
+body {
+  font-family: 'rogotype';
+  background-color: #111;
+}
+
+.error {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  z-index: 5000;
+}
+
+.error span {
+  font-size: 4vw;
+}
+
+@media (orientation: landscape) {
+  .error {
+    display: none;
+  }
+}
+
+.player_tab {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.player_tab .Ptab {
+  position: absolute;
+  z-index: 150;
+  background-color: #555;
+  border-radius: 5px 5px 0 0;
+  margin-top: 1vh;
+  width: 30vw;
+  height: 9vh;
+  left: 1vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-bottom: dotted 2px #222;
+}
+
+.player_tab .Ptab span {
+  font-size: 2vw;
+}
+
+.player_tab .page {
+  background-color: #555;
+  width: 100vw;
+  height: 70vh;
+  margin-top: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.player_tab .page .joinBox {
+  border: solid 4px #333;
+  border-radius: 5px;
+  width: 26%;
+  height: 66vh;
+  margin: 0 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.player_tab .page .joinBox div {
+  text-align: center;
+  width: 50%;
+  height: 15%;
+}
+
+.player_tab .page .joinBox div img {
+  height: 90%;
+}
+
+.player_tab .page .joinBox span {
+  text-align: center;
+  font-size: 1.8vw;
+  width: 100%;
+}
+
+.player_tab .page .statusBox {
+  height: 65vh;
+  width: 68%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.player_tab .page .statusBox .zone {
+  background-color: #333;
+  height: 22%;
+  width: 98%;
+  border-radius: 10px;
+}
+
+.player_tab .page .statusBox .zone span {
+  margin-left: 3%;
+  color: gray;
+  width: 90%;
+  height: 30%;
+  font-size: 2vw;
+}
+
+.player_tab .page .statusBox .zone .crewBox {
+  width: 100%;
+  height: 60%;
+  position: relative;
+}
+
+.player_tab .page .statusBox .zone .crewBox img {
+  height: 100%;
+}
+
+.map_tab {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.map_tab .Mtab {
+  z-index: 150;
+  border-radius: 5px 5px 0 0;
+  margin-top: 1vh;
+}
+
+.map_tab .Mtab1 {
+  position: absolute;
+  background-color: #555;
+  width: 10vw;
+  height: 9vh;
+  left: 33vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-bottom: dotted 2px #222;
+}
+
+.map_tab .Mtab1 span {
+  font-size: 2vw;
+}
+
+.map_tab .Mtab2 {
+  position: absolute;
+  background-color: #555;
+  width: 10vw;
+  height: 9vh;
+  left: 44vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-bottom: dotted 2px #222;
+}
+
+.map_tab .Mtab2 span {
+  font-size: 2vw;
+}
+
+.map_tab .Mtab3 {
+  position: absolute;
+  background-color: #555;
+  width: 10vw;
+  height: 9vh;
+  left: 55vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-bottom: dotted 2px #222;
+}
+
+.map_tab .Mtab3 span {
+  font-size: 2vw;
+}
+
+.map_tab .Mtab4 {
+  position: absolute;
+  background-color: #555;
+  width: 10vw;
+  height: 9vh;
+  left: 66vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-bottom: dotted 2px #222;
+}
+
+.map_tab .Mtab4 span {
+  font-size: 2vw;
+}
+
+.map_tab .Mtab5 {
+  position: absolute;
+  background-color: #555;
+  width: 10vw;
+  height: 9vh;
+  left: 77vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-bottom: dotted 2px #222;
+}
+
+.map_tab .Mtab5 span {
+  font-size: 2vw;
+}
+
+.map_tab .Mtab6 {
+  position: absolute;
+  background-color: #555;
+  width: 10vw;
+  height: 9vh;
+  left: 88vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-bottom: dotted 2px #222;
+}
+
+.map_tab .Mtab6 span {
+  font-size: 2vw;
+}
+
+.map_tab .page {
+  background-color: #555;
+  width: 100vw;
+  height: 70vh;
+  margin-top: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.map_tab .page .mapCan {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+}
+
+.map_tab .page .mapBox {
+  height: 100%;
+  max-width: 70vw;
+  -webkit-filter: saturate(0%) contrast(80%);
+          filter: saturate(0%) contrast(80%);
+}
+
+.map_tab .page .paintBox {
+  z-index: 200;
+  width: 28vw;
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.map_tab .page .paintBox .colorBox {
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 75%;
+  height: 35%;
+  padding: 5%;
+  background-color: #333;
+}
+
+.map_tab .page .paintBox .colorBox div {
+  width: 15%;
+  height: 40%;
+  border-radius: 2px;
+}
+
+.map_tab .page .paintBox .colorBox .brownP {
+  background-color: #72491e;
+}
+
+.map_tab .page .paintBox .colorBox .blackP {
+  background-color: #3f484e;
+}
+
+.map_tab .page .paintBox .colorBox .blueP {
+  background-color: #132fd2;
+}
+
+.map_tab .page .paintBox .colorBox .greenP {
+  background-color: #127f2d;
+}
+
+.map_tab .page .paintBox .colorBox .lightblueP {
+  background-color: #39fedb;
+}
+
+.map_tab .page .paintBox .colorBox .limeP {
+  background-color: #50ef3a;
+}
+
+.map_tab .page .paintBox .colorBox .orangeP {
+  background-color: #ef7d0e;
+}
+
+.map_tab .page .paintBox .colorBox .pinkP {
+  background-color: #ed53b9;
+}
+
+.map_tab .page .paintBox .colorBox .purpleP {
+  background-color: #6b30bc;
+}
+
+.map_tab .page .paintBox .colorBox .redP {
+  background-color: #c51111;
+}
+
+.map_tab .page .paintBox .colorBox .whiteP {
+  background-color: #c5d5e1;
+}
+
+.map_tab .page .paintBox .colorBox .yellowP {
+  background-color: #f5f558;
+}
+
+.map_tab .page .paintBox .eraceBox {
+  width: 20%;
+  text-align: center;
+}
+
+.map_tab .page .paintBox .eraceBox img {
+  width: 70%;
+  -webkit-filter: contrast(150%);
+          filter: contrast(150%);
+}
+
+.map_tab .page .paintBox .crewBox {
+  width: 100%;
+  height: 40%;
+  position: relative;
+}
+
+.map_tab .page .paintBox .crewBox img {
+  width: 30px;
+}
+
+.matesBox {
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.matesBox img {
+  width: 7vw;
+}
+
+.mapChangeBox {
+  z-index: 150;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 12vw;
+  height: 18vh;
+  background-color: #777;
+  border-radius: 5px 0 0 0;
+  padding: 4px 0 0 4px;
+}
+
+.mapChangeBox img {
+  height: 45%;
+  -webkit-filter: drop-shadow(0 3px 0 rgba(0, 0, 0, 0.2));
+          filter: drop-shadow(0 3px 0 rgba(0, 0, 0, 0.2));
+}
+
+.drag-and-drop {
+  cursor: move;
+  position: absolute;
+  z-index: 100;
+}
+
+.drag {
+  z-index: 101;
+}
+
+.crewHide {
+  display: none !important;
+}
+
+.tabHide {
+  background-color: #222 !important;
+}
+
+.pageHide {
+  display: none !important;
+}
+
+.add_col_choice {
+  outline: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+.c1 {
+  left: 5vw;
+}
+
+.c2 {
+  left: 10vw;
+}
+
+.c3 {
+  left: 15vw;
+}
+
+.c4 {
+  left: 20vw;
+}
+
+.c5 {
+  left: 25vw;
+}
+
+.c6 {
+  left: 30vw;
+}
+
+.c7 {
+  left: 35vw;
+}
+
+.c8 {
+  left: 40vw;
+}
+
+.c9 {
+  left: 45vw;
+}
+
+.c10 {
+  left: 50vw;
+}
+
+.c11 {
+  left: 55vw;
+}
+
+.c12 {
+  left: 60vw;
+}
+
+.cc1 {
+  left: 0vw;
+}
+
+.cc2 {
+  left: 4.4vw;
+}
+
+.cc3 {
+  left: 8.8vw;
+}
+
+.cc4 {
+  left: 13.2vw;
+}
+
+.cc5 {
+  left: 17.6vw;
+}
+
+.cc6 {
+  left: 22vw;
+}
+
+.cc7 {
+  left: 0vw;
+  top: 5vw;
+}
+
+.cc8 {
+  left: 4.4vw;
+  top: 5vw;
+}
+
+.cc9 {
+  left: 8.8vw;
+  top: 5vw;
+}
+
+.cc10 {
+  left: 13.2vw;
+  top: 5vw;
+}
+
+.cc11 {
+  left: 17.6vw;
+  top: 5vw;
+}
+
+.cc12 {
+  left: 22vw;
+  top: 5vw;
+}
+/*# sourceMappingURL=style.css.map */
