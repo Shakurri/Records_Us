@@ -44,6 +44,7 @@ body{
     top:0;
     left:0;
 	.Ptab{
+        cursor: pointer;
         position: absolute;
         z-index: 150;
         background-color: #555;
@@ -84,6 +85,9 @@ body{
                 text-align: center;
                 width:50%;
                 height:15%;
+                .check{
+                    cursor: pointer;
+                }
                 img{
                     width:32%;
                 }
@@ -149,6 +153,7 @@ body{
         z-index: 150;
         border-radius: 5px 5px 0 0;
         margin-top:1vh;
+        cursor: pointer;
     }
     .Mtab1{
         position: absolute;
@@ -278,6 +283,7 @@ body{
                     width:15%;
                     height:40%;
                     border-radius: 2px;
+                    cursor: pointer;
                 }
                 .brownP{
                     background-color: #72491e;
@@ -319,6 +325,7 @@ body{
             .eraceBox{
                 width:20%;
                 text-align: center;
+                cursor: pointer;
                 img{
                     width:70%;
                     filter:contrast(150%);
@@ -362,7 +369,8 @@ body{
     img{
         width:38%;
         max-height:45%;
-        filter:drop-shadow(0 3px 0 rgba(0, 0, 0, 0.2))
+        filter:drop-shadow(0 3px 0 rgba(0, 0, 0, 0.2));
+        cursor: pointer;
     }
 }
 

@@ -220,6 +220,8 @@ var selectColor = "#0b141a";
 var selectSize = 5;
 var selectEmoji = '';
 
+var isDrawing = false;
+
 var nowCtx;
 
 
@@ -244,6 +246,10 @@ window.onload = function() {
     canvas[i].height=window.innerHeight;
     canvas[i].addEventListener("touchstart", touchStart, false);
     canvas[i].addEventListener("touchmove", touchMove, false);
+    canvas[i].addEventListener("mousedown", mouseStart, false);
+    canvas[i].addEventListener("mousemove", mouseMove, false);
+    canvas[i].addEventListener("mouseup", mouseUp, false);
+
   }
   noScroll();
 }
@@ -252,7 +258,11 @@ function touchStart(e) {
     old_x = e.touches[0].pageX;
     old_y = e.touches[0].pageY;
 }
-
+function mouseStart(e) {
+  old_x = e.pageX;
+  old_y = e.pageY;
+  isDrawing=true;
+}
 function touchMove(e) {
     e.preventDefault();
 
@@ -262,6 +272,20 @@ function touchMove(e) {
     drawLine(old_x, old_y, x, y, nowCtx);
     old_x = x;
     old_y = y;
+}
+function mouseMove(e) {
+  e.preventDefault();
+
+  x = e.pageX;
+  y = e.pageY;
+  if(isDrawing){
+    drawLine(old_x, old_y, x, y, nowCtx);
+    old_x = x;
+    old_y = y;
+  }
+}
+function mouseUp(e) {
+  isDrawing=false;
 }
 
 function drawLine(x1, y1, x2, y2, ctx) {
