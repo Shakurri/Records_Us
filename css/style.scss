@@ -32,6 +32,12 @@ body{
         display:none;
     }
 }
+.reloadBox{
+	position: absolute;
+	top:-1px;
+	left:-1px;
+	width:5.5vw;
+}
 .player_tab{
     position: absolute;
     top:0;
@@ -42,9 +48,9 @@ body{
         background-color: #555;
         border-radius: 5px 5px 0 0;
         margin-top:1vh;
-		width:30vw;
+		width:25vw;
 		height:9vh;
-        left: 1vw;
+        left: 6vw;
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -78,7 +84,7 @@ body{
                 width:50%;
                 height:15%;
                 img{
-                    height:90%;
+                    width:40%;
                 }
             }
             span{
@@ -309,7 +315,7 @@ body{
                 height:40%;
                 position: relative;
                 img{
-                    width:30px;
+                    width:4vw;
                 }
             }
         }
@@ -322,6 +328,7 @@ body{
     display: flex;
     img{
         width:7vw;
+        height:7vw;
     }
 }
 
@@ -332,14 +339,15 @@ body{
     right:0;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     width:12vw;
     height:18vh;
     background-color: #777;
     border-radius: 5px 0 0 0;
-    padding:4px 0 0 4px;
     img{
-        height:45%;
+        width:38%;
+        max-height:45%;
         filter:drop-shadow(0 3px 0 rgba(0, 0, 0, 0.2))
     }
 }

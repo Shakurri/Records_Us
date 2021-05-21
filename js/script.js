@@ -658,6 +658,9 @@ $('.Mtab6').on('click',function () {
 
 
 
+  $('.reloadBox').on('click',function () {
+    location.reload();
+  });
 
 // prevent pulldown reload
 var $target = $(window);

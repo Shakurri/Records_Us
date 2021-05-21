@@ -42,6 +42,13 @@ body {
   }
 }
 
+.reloadBox {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 5.5vw;
+}
+
 .player_tab {
   position: absolute;
   top: 0;
@@ -54,9 +61,9 @@ body {
   background-color: #555;
   border-radius: 5px 5px 0 0;
   margin-top: 1vh;
-  width: 30vw;
+  width: 25vw;
   height: 9vh;
-  left: 1vw;
+  left: 6vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -113,7 +120,7 @@ body {
 }
 
 .player_tab .page .joinBox div img {
-  height: 90%;
+  width: 40%;
 }
 
 .player_tab .page .joinBox span {
@@ -437,7 +444,7 @@ body {
 }
 
 .map_tab .page .paintBox .crewBox img {
-  width: 30px;
+  width: 4vw;
 }
 
 .matesBox {
@@ -450,6 +457,7 @@ body {
 
 .matesBox img {
   width: 7vw;
+  height: 7vw;
 }
 
 .mapChangeBox {
@@ -463,17 +471,20 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 12vw;
   height: 18vh;
   background-color: #777;
   border-radius: 5px 0 0 0;
-  padding: 4px 0 0 4px;
 }
 
 .mapChangeBox img {
-  height: 45%;
+  width: 38%;
+  max-height: 45%;
   -webkit-filter: drop-shadow(0 3px 0 rgba(0, 0, 0, 0.2));
           filter: drop-shadow(0 3px 0 rgba(0, 0, 0, 0.2));
 }
