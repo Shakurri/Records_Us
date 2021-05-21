@@ -245,6 +245,7 @@ window.onload = function() {
     canvas[i].addEventListener("touchstart", touchStart, false);
     canvas[i].addEventListener("touchmove", touchMove, false);
   }
+  noScroll();
 }
 
 function touchStart(e) {
@@ -685,3 +686,19 @@ $target.on('touchmove', function(e){
     prevY = currentY;
 });
 
+function disableScroll(event) {
+  event.preventDefault();
+}
+
+// スクロール禁止
+function noScroll() {
+  // イベントと関数を紐付け
+  document.addEventListener('touchmove', disableScroll, { passive: false });
+  document.addEventListener('mousewheel', disableScroll, { passive: false });
+}
+
+function returnScroll() {    
+  // イベントと関数を紐付け  
+  document.removeEventListener('touchmove', disableScroll, { passive: false });
+  document.removeEventListener('mousewheel', disableScroll, { passive: false });
+}
