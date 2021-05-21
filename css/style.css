@@ -170,6 +170,22 @@ body {
   height: 100%;
 }
 
+.player_tab .page .statusBox .z1 {
+  background-color: #333;
+}
+
+.player_tab .page .statusBox .z2 {
+  background-color: #444;
+}
+
+.player_tab .page .statusBox .z3 {
+  background-color: #222;
+}
+
+.player_tab .page .statusBox .z4 {
+  background-color: #422;
+}
+
 .map_tab {
   position: absolute;
   top: 0;
