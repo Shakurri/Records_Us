@@ -37,6 +37,7 @@
 
   //マウスカーソルが動いたときに発火
   function mmove(e) {
+    isDrawing=false;
 
       //ドラッグしている要素を取得
       var drag = document.getElementsByClassName("drag")[0];
@@ -254,6 +255,14 @@ window.onload = function() {
   noScroll();
 }
 
+window.addEventListener("resize", function(event) {
+  for(var i=0;i<6;i++){
+    canvas[i].width=window.innerWidth;
+    canvas[i].height=window.innerHeight;
+  }
+});
+
+
 function touchStart(e) {
     old_x = e.touches[0].pageX;
     old_y = e.touches[0].pageY;
@@ -268,7 +277,6 @@ function touchMove(e) {
 
     x = e.touches[0].pageX;
     y = e.touches[0].pageY;
-
     drawLine(old_x, old_y, x, y, nowCtx);
     old_x = x;
     old_y = y;
@@ -677,6 +685,122 @@ $('.Mtab6').on('click',function () {
   });
   $('.airshipChange').on('click',function(){
     $('.mapBox').attr('src', 'image/airshipMap.png');
+  });
+
+
+  var isDead=new Array(12);
+  for(var i=0;i<12;i++){
+    isDead[i]=false;
+  }
+
+
+  $('.uMates1').on('click',function(){
+    if(isDead[0]){
+      $('.black').attr('src', 'image/crewIcon/black.PNG');
+      isDead[0]=false;
+    }else{
+      $('.black').attr('src', 'image/deadIcon/blackD.PNG');
+      isDead[0]=true;
+    }
+  });
+  $('.uMates2').on('click',function(){
+    if(isDead[1]){
+      $('.blue').attr('src', 'image/crewIcon/blue.PNG');
+      isDead[1]=false;
+    }else{
+      $('.blue').attr('src', 'image/deadIcon/blueD.PNG');
+      isDead[1]=true;
+    }
+  });
+  $('.uMates3').on('click',function(){
+    if(isDead[2]){
+      $('.brown').attr('src', 'image/crewIcon/brown.PNG');
+      isDead[2]=false;
+    }else{
+      $('.brown').attr('src', 'image/deadIcon/brownD.PNG');
+      isDead[2]=true;
+    }
+  });
+  $('.uMates4').on('click',function(){
+    if(isDead[3]){
+      $('.green').attr('src', 'image/crewIcon/green.PNG');
+      isDead[3]=false;
+    }else{
+      $('.green').attr('src', 'image/deadIcon/greenD.PNG');
+      isDead[3]=true;
+    }
+  });
+  $('.uMates5').on('click',function(){
+    if(isDead[4]){
+      $('.lightblue').attr('src', 'image/crewIcon/lightblue.PNG');
+      isDead[4]=false;
+    }else{
+      $('.lightblue').attr('src', 'image/deadIcon/lightblueD.PNG');
+      isDead[4]=true;
+    }
+  });
+  $('.uMates6').on('click',function(){
+    if(isDead[5]){
+      $('.lime').attr('src', 'image/crewIcon/lime.PNG');
+      isDead[5]=false;
+    }else{
+      $('.lime').attr('src', 'image/deadIcon/limeD.PNG');
+      isDead[5]=true;
+    }
+  });
+  $('.uMates7').on('click',function(){
+    if(isDead[6]){
+      $('.orange').attr('src', 'image/crewIcon/orange.PNG');
+      isDead[6]=false;
+    }else{
+      $('.orange').attr('src', 'image/deadIcon/orangeD.PNG');
+      isDead[6]=true;
+    }
+  });
+  $('.uMates8').on('click',function(){
+    if(isDead[7]){
+      $('.pink').attr('src', 'image/crewIcon/pink.PNG');
+      isDead[7]=false;
+    }else{
+      $('.pink').attr('src', 'image/deadIcon/pinkD.PNG');
+      isDead[7]=true;
+    }
+  });
+  $('.uMates9').on('click',function(){
+    if(isDead[8]){
+      $('.purple').attr('src', 'image/crewIcon/purple.PNG');
+      isDead[8]=false;
+    }else{
+      $('.purple').attr('src', 'image/deadIcon/purpleD.PNG');
+      isDead[8]=true;
+    }
+  });
+  $('.uMates10').on('click',function(){
+    if(isDead[9]){
+      $('.red').attr('src', 'image/crewIcon/red.PNG');
+      isDead[9]=false;
+    }else{
+      $('.red').attr('src', 'image/deadIcon/redD.PNG');
+      isDead[9]=true;
+    }
+  });
+  $('.uMates11').on('click',function(){
+    if(isDead[10]){
+      $('.white').attr('src', 'image/crewIcon/white.PNG');
+      isDead[10]=false;
+    }else{
+      $('.white').attr('src', 'image/deadIcon/whiteD.PNG');
+      isDead[10]=true;
+    }
+  });
+  $('.uMates12').on('click',function(){
+    if(isDead[11]){
+      $('.yellow').attr('src', 'image/crewIcon/yellow.PNG');
+      isDead[11]=false;
+    }else{
+      $('.yellow').attr('src', 'image/deadIcon/yellowD.PNG');
+      isDead[11]=true;
+    }
   });
 
 
