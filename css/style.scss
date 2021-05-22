@@ -23,12 +23,42 @@ body{
 	width:100vw;
 	height:100vh;
     background-color: #333;
+    z-index: 5000;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    z-index: 5000;
-    span{
-        font-size: 4vw;
+    .messageBox{
+        width: 80vw;;
+        .message1{
+            width:80vw;
+            font-size: 6vw;
+            font-family: 'marumonica';
+            color: #aaa;
+        }
+        .message2{
+            width:80vw;
+            font-size: 4vw;
+            font-family: 'marumonica';
+            color: #888;
+        }
+        .space{
+            height:5vw;
+            width: 100vw;
+        }
+    }
+    .copyrightBox{
+        position: absolute;
+        bottom:5vh;
+        text-align: center;
+        .title{
+            font-family: 'marumonica';
+            color: #999;
+            font-size: 5vw;
+        }
+        .cl{
+            font-family: 'marumonica';
+            color: #888;
+        }
     }
 }
 @media(orientation:landscape){

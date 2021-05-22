@@ -26,6 +26,7 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: #333;
+  z-index: 5000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -34,11 +35,46 @@ body {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  z-index: 5000;
 }
 
-.error span {
+.error .messageBox {
+  width: 80vw;
+}
+
+.error .messageBox .message1 {
+  width: 80vw;
+  font-size: 6vw;
+  font-family: 'marumonica';
+  color: #aaa;
+}
+
+.error .messageBox .message2 {
+  width: 80vw;
   font-size: 4vw;
+  font-family: 'marumonica';
+  color: #888;
+}
+
+.error .messageBox .space {
+  height: 5vw;
+  width: 100vw;
+}
+
+.error .copyrightBox {
+  position: absolute;
+  bottom: 5vh;
+  text-align: center;
+}
+
+.error .copyrightBox .title {
+  font-family: 'marumonica';
+  color: #999;
+  font-size: 5vw;
+}
+
+.error .copyrightBox .cl {
+  font-family: 'marumonica';
+  color: #888;
 }
 
 @media (orientation: landscape) {
