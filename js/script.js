@@ -564,7 +564,7 @@ $('.Mtab6').on('click',function () {
     selectSize=5;
   });
   $('.blackP').on('click',function () {
-    selectColor="#0b141a";
+    selectColor="#3f484e";
     $('.col').removeClass('add_col_choice');
     if(!$(this).hasClass('add_col_choice')){
       $(this).addClass('add_col_choice');
@@ -654,7 +654,7 @@ $('.Mtab6').on('click',function () {
     selectSize=5;
   });
   $('.whiteP').on('click',function () {
-    selectColor="#c5d5e1";
+    selectColor="#dfeffb";
     $('.col').removeClass('add_col_choice');
     if(!$(this).hasClass('add_col_choice')){
       $(this).addClass('add_col_choice');
