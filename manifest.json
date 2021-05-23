@@ -1,0 +1,9 @@
+{
+  "name": "Records Us",
+  "short_name": "Records Us",
+  "theme_color": "#333333",
+  "background_color": "#333333",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "www.records-us.net"
+}

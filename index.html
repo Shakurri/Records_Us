@@ -15,6 +15,15 @@
 
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
 
+    <link rel="manifest" href="/manifest.json">
+    <script>
+        window.addEventListener('load', function() {
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.register("/serviceWorker.js");
+            }
+        });
+    </script>
+
 </head>
 <body>
 	<div class="error">
