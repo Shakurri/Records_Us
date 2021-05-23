@@ -43,12 +43,13 @@ body {
 
 .error .messageBox .message1 {
   width: 80vw;
-  font-size: 6vw;
+  font-size: 6.5vw;
   font-family: 'marumonica';
-  color: #aaa;
+  color: #ccc;
 }
 
 .error .messageBox .message2 {
+  margin-left: 4vw;
   width: 80vw;
   font-size: 4vw;
   font-family: 'marumonica';
@@ -60,21 +61,22 @@ body {
   width: 100vw;
 }
 
-.error .copyrightBox {
+.error .titleBox {
   position: absolute;
   bottom: 5vh;
   text-align: center;
 }
 
-.error .copyrightBox .title {
+.error .titleBox .title {
   font-family: 'marumonica';
-  color: #999;
+  color: #bbb;
   font-size: 5vw;
 }
 
-.error .copyrightBox .cl {
+.error .titleBox .cl {
   font-family: 'marumonica';
   color: #888;
+  font-size: 3vw;
 }
 
 @media (orientation: landscape) {

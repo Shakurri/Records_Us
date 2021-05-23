@@ -31,11 +31,12 @@ body{
         width: 80vw;;
         .message1{
             width:80vw;
-            font-size: 6vw;
+            font-size: 6.5vw;
             font-family: 'marumonica';
-            color: #aaa;
+            color: #ccc;
         }
         .message2{
+            margin-left:4vw;
             width:80vw;
             font-size: 4vw;
             font-family: 'marumonica';
@@ -46,18 +47,19 @@ body{
             width: 100vw;
         }
     }
-    .copyrightBox{
+    .titleBox{
         position: absolute;
         bottom:5vh;
         text-align: center;
         .title{
             font-family: 'marumonica';
-            color: #999;
+            color: #bbb;
             font-size: 5vw;
         }
         .cl{
             font-family: 'marumonica';
             color: #888;
+            font-size: 3vw;
         }
     }
 }
