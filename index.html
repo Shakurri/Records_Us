@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link rel="apple-touch-icon" href="image/icon.png">
+	<meta name="msapplication-tap-highlight" content="no">
+	<title>RecordsUs</title>
+	<meta name="keywords" content="Among us,アマングアス,アモングアス,ツール,メモ">
+    <meta name="description" content="ゲーム「Among us」の簡易記録用ツールです。">
+	<link rel="stylesheet" href="css/ress.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+
+</head>
+<body>
+	<div class="error">
+		<div class="messageBox">
+			<p class="message1">◆ 横長の画面でお使いください。</p>
+			<div class="space"></div>
+			<p class="message2">
+				モバイルでの使用の場合、<br>
+				「ホーム画面に追加」してお使いください。
+			</p>
+			<div class="space"></div>
+			<p class="message2">
+				使用しているマップ画像はテラゾー様（@terazo）より<br>
+				引用したものです。
+			</p>
+			<p class="message2">
+				使用しているクルーメイト画像は、Innersloth様より<br>
+				引用したものです。Copyright Innersloth, LLC
+			</p>
+		</div>
+		<div class="titleBox">
+			<p class="title">Records_Us</p>
+			<p class="cl">制作 : kixi/</p>
+		</div>
+		
+
+
+		
+	</div>
+	<section class="player_tab">
+		<div class="Ptab">
+			<span>Players</span>
+		</div>
+
+		<img class="reloadBox" src="image/reload.png">
+
+		<div class="page page0">
+			<div class="joinBox">
+				<span>参加者</span>
+				<div><img src="image/crewIcon/black.PNG"><img src="image/UI/checked.png" class="check checkBlack"></div>
+				<div><img src="image/crewIcon/blue.PNG"><img src="image/UI/checked.png" class="check checkBlue"></div>
+				<div><img src="image/crewIcon/brown.PNG"><img src="image/UI/checked.png" class="check checkBrown"></div>
+				<div><img src="image/crewIcon/green.PNG"><img src="image/UI/checked.png" class="check checkGreen"></div>
+				<div><img src="image/crewIcon/lightblue.PNG"><img src="image/UI/checked.png" class="check checkLightblue"></div>
+				<div><img src="image/crewIcon/lime.PNG"><img src="image/UI/checked.png" class="check checkLime"></div>
+				<div><img src="image/crewIcon/orange.PNG"><img src="image/UI/checked.png" class="check checkOrange"></div>
+				<div><img src="image/crewIcon/pink.PNG"><img src="image/UI/checked.png" class="check checkPink"></div>
+				<div><img src="image/crewIcon/purple.PNG"><img src="image/UI/checked.png" class="check checkPurple"></div>
+				<div><img src="image/crewIcon/red.PNG"><img src="image/UI/checked.png" class="check checkRed"></div>
+				<div><img src="image/crewIcon/white.PNG"><img src="image/UI/checked.png" class="check checkWhite"></div>
+				<div><img src="image/crewIcon/yellow.PNG"><img src="image/UI/checked.png" class="check checkYellow"></div>
+			</div>
+			<div class="statusBox">
+				<div class="zone z3"><span>黒め</span></div>
+				<div class="zone z1">
+					<span>グレー</span>
+					<div class="crewBox">
+						<img class="drag-and-drop c1 black" src="image/crewIcon/black.PNG">
+						<img class="drag-and-drop c2 blue" src="image/crewIcon/blue.PNG">
+						<img class="drag-and-drop c3 brown" src="image/crewIcon/brown.PNG">
+						<img class="drag-and-drop c4 green" src="image/crewIcon/green.PNG">
+						<img class="drag-and-drop c5 lightblue" src="image/crewIcon/lightblue.PNG">
+						<img class="drag-and-drop c6 lime" src="image/crewIcon/lime.PNG">
+						<img class="drag-and-drop c7 orange" src="image/crewIcon/orange.PNG">
+						<img class="drag-and-drop c8 pink" src="image/crewIcon/pink.PNG">
+						<img class="drag-and-drop c9 purple" src="image/crewIcon/purple.PNG">
+						<img class="drag-and-drop c10 red" src="image/crewIcon/red.PNG">
+						<img class="drag-and-drop c11 white" src="image/crewIcon/white.PNG">
+						<img class="drag-and-drop c12 yellow" src="image/crewIcon/yellow.PNG">
+					</div>
+				</div>
+				
+				<div class="zone z2"><span>白め</span></div>
+				<div class="zone z4"><span>死亡</span></div>
+				<div class="zone z5"><span>吊り</span></div>
+			</div>
+		</div>
+	</section>
+	<section class="map_tab">
+		<div class="Mtab Mtab1 tabHide">
+			<span>Day1</span>
+		</div>
+		<div class="page pageHide page1">
+			<canvas class="mapCan" id="can1"></canvas>
+			<img src="image/skeldMap.png" class="mapBox">
+			<div class="paintBox">
+				<div class="colorBox">
+					<div class="blackP col add_col_choice"></div>
+					<div class="blueP col"></div>
+					<div class="brownP col"></div>
+					<div class="greenP col"></div>
+					<div class="lightblueP col"></div>
+					<div class="limeP col"></div>
+					<div class="orangeP col"></div>
+					<div class="pinkP col"></div>
+					<div class="purpleP col"></div>
+					<div class="redP col"></div>
+					<div class="whiteP col"></div>
+					<div class="yellowP col"></div>
+				</div>
+				<div class="eraceBox">
+					<img src="image/UI/era.png" class="eraBut">
+				</div>
+				<div class="crewBox">
+					<img class="drag-and-drop cc1 black" src="image/crewIcon/black.PNG">
+					<img class="drag-and-drop cc2 blue" src="image/crewIcon/blue.PNG">
+					<img class="drag-and-drop cc3 brown" src="image/crewIcon/brown.PNG">
+					<img class="drag-and-drop cc4 green" src="image/crewIcon/green.PNG">
+					<img class="drag-and-drop cc5 lightblue" src="image/crewIcon/lightblue.PNG">
+					<img class="drag-and-drop cc6 lime" src="image/crewIcon/lime.PNG">
+					<img class="drag-and-drop cc7 orange" src="image/crewIcon/orange.PNG">
+					<img class="drag-and-drop cc8 pink" src="image/crewIcon/pink.PNG">
+					<img class="drag-and-drop cc9 purple" src="image/crewIcon/purple.PNG">
+					<img class="drag-and-drop cc10 red" src="image/crewIcon/red.PNG">
+					<img class="drag-and-drop cc11 white" src="image/crewIcon/white.PNG">
+					<img class="drag-and-drop cc12 yellow" src="image/crewIcon/yellow.PNG">
+
+					<img class="drag-and-drop rep" src="image/Report.png">
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	<section class="map_tab">
+		<div class="Mtab Mtab2 tabHide">
+			<span>Day2</span>
+		</div>
+		<div class="page pageHide page2">
+			<canvas class="mapCan" id="can2"></canvas>
+			<img src="image/skeldMap.png" class="mapBox">
+			<div class="paintBox">
+				<div class="colorBox">
+					<div class="blackP col add_col_choice"></div>
+					<div class="blueP col"></div>
+					<div class="brownP col"></div>
+					<div class="greenP col"></div>
+					<div class="lightblueP col"></div>
+					<div class="limeP col"></div>
+					<div class="orangeP col"></div>
+					<div class="pinkP col"></div>
+					<div class="purpleP col"></div>
+					<div class="redP col"></div>
+					<div class="whiteP col"></div>
+					<div class="yellowP col"></div>
+				</div>
+				<div class="eraceBox">
+					<img src="image/UI/era.png" class="eraBut">
+				</div>
+				<div class="crewBox">
+					<img class="drag-and-drop cc1 black" src="image/crewIcon/black.PNG">
+					<img class="drag-and-drop cc2 blue" src="image/crewIcon/blue.PNG">
+					<img class="drag-and-drop cc3 brown" src="image/crewIcon/brown.PNG">
+					<img class="drag-and-drop cc4 green" src="image/crewIcon/green.PNG">
+					<img class="drag-and-drop cc5 lightblue" src="image/crewIcon/lightblue.PNG">
+					<img class="drag-and-drop cc6 lime" src="image/crewIcon/lime.PNG">
+					<img class="drag-and-drop cc7 orange" src="image/crewIcon/orange.PNG">
+					<img class="drag-and-drop cc8 pink" src="image/crewIcon/pink.PNG">
+					<img class="drag-and-drop cc9 purple" src="image/crewIcon/purple.PNG">
+					<img class="drag-and-drop cc10 red" src="image/crewIcon/red.PNG">
+					<img class="drag-and-drop cc11 white" src="image/crewIcon/white.PNG">
+					<img class="drag-and-drop cc12 yellow" src="image/crewIcon/yellow.PNG">
+					<img class="drag-and-drop rep" src="image/Report.png">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="map_tab">
+		<div class="Mtab Mtab3 tabHide">
+			<span>Day3</span>
+		</div>
+		<div class="page pageHide page3">
+			<canvas class="mapCan" id="can3"></canvas>
+			<img src="image/skeldMap.png" class="mapBox">
+			<div class="paintBox">
+				<div class="colorBox">
+					<div class="blackP col add_col_choice"></div>
+					<div class="blueP col"></div>
+					<div class="brownP col"></div>
+					<div class="greenP col"></div>
+					<div class="lightblueP col"></div>
+					<div class="limeP col"></div>
+					<div class="orangeP col"></div>
+					<div class="pinkP col"></div>
+					<div class="purpleP col"></div>
+					<div class="redP col"></div>
+					<div class="whiteP col"></div>
+					<div class="yellowP col"></div>
+				</div>
+				<div class="eraceBox">
+					<img src="image/UI/era.png" class="eraBut">
+				</div>
+				<div class="crewBox">
+					<img class="drag-and-drop cc1 black" src="image/crewIcon/black.PNG">
+					<img class="drag-and-drop cc2 blue" src="image/crewIcon/blue.PNG">
+					<img class="drag-and-drop cc3 brown" src="image/crewIcon/brown.PNG">
+					<img class="drag-and-drop cc4 green" src="image/crewIcon/green.PNG">
+					<img class="drag-and-drop cc5 lightblue" src="image/crewIcon/lightblue.PNG">
+					<img class="drag-and-drop cc6 lime" src="image/crewIcon/lime.PNG">
+					<img class="drag-and-drop cc7 orange" src="image/crewIcon/orange.PNG">
+					<img class="drag-and-drop cc8 pink" src="image/crewIcon/pink.PNG">
+					<img class="drag-and-drop cc9 purple" src="image/crewIcon/purple.PNG">
+					<img class="drag-and-drop cc10 red" src="image/crewIcon/red.PNG">
+					<img class="drag-and-drop cc11 white" src="image/crewIcon/white.PNG">
+					<img class="drag-and-drop cc12 yellow" src="image/crewIcon/yellow.PNG">
+					<img class="drag-and-drop rep" src="image/Report.png">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="map_tab">
+		<div class="Mtab Mtab4 tabHide">
+			<span>Day4</span>
+		</div>
+		<div class="page pageHide page4">
+			<canvas class="mapCan" id="can4"></canvas>
+			<img src="image/skeldMap.png" class="mapBox">
+			<div class="paintBox">
+				<div class="colorBox">
+					<div class="blackP col add_col_choice"></div>
+					<div class="blueP col"></div>
+					<div class="brownP col"></div>
+					<div class="greenP col"></div>
+					<div class="lightblueP col"></div>
+					<div class="limeP col"></div>
+					<div class="orangeP col"></div>
+					<div class="pinkP col"></div>
+					<div class="purpleP col"></div>
+					<div class="redP col"></div>
+					<div class="whiteP col"></div>
+					<div class="yellowP col"></div>
+				</div>
+				<div class="eraceBox">
+					<img src="image/UI/era.png" class="eraBut">
+				</div>
+				<div class="crewBox">
+					<img class="drag-and-drop cc1 black" src="image/crewIcon/black.PNG">
+					<img class="drag-and-drop cc2 blue" src="image/crewIcon/blue.PNG">
+					<img class="drag-and-drop cc3 brown" src="image/crewIcon/brown.PNG">
+					<img class="drag-and-drop cc4 green" src="image/crewIcon/green.PNG">
+					<img class="drag-and-drop cc5 lightblue" src="image/crewIcon/lightblue.PNG">
+					<img class="drag-and-drop cc6 lime" src="image/crewIcon/lime.PNG">
+					<img class="drag-and-drop cc7 orange" src="image/crewIcon/orange.PNG">
+					<img class="drag-and-drop cc8 pink" src="image/crewIcon/pink.PNG">
+					<img class="drag-and-drop cc9 purple" src="image/crewIcon/purple.PNG">
+					<img class="drag-and-drop cc10 red" src="image/crewIcon/red.PNG">
+					<img class="drag-and-drop cc11 white" src="image/crewIcon/white.PNG">
+					<img class="drag-and-drop cc12 yellow" src="image/crewIcon/yellow.PNG">
+					<img class="drag-and-drop rep" src="image/Report.png">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="map_tab">
+		<div class="Mtab Mtab5 tabHide">
+			<span>Day5</span>
+		</div>
+		<div class="page pageHide page5">
+			<canvas class="mapCan" id="can5"></canvas>
+			<img src="image/skeldMap.png" class="mapBox">
+			<div class="paintBox">
+				<div class="colorBox">
+					<div class="blackP col add_col_choice"></div>
+					<div class="blueP col"></div>
+					<div class="brownP col"></div>
+					<div class="greenP col"></div>
+					<div class="lightblueP col"></div>
+					<div class="limeP col"></div>
+					<div class="orangeP col"></div>
+					<div class="pinkP col"></div>
+					<div class="purpleP col"></div>
+					<div class="redP col"></div>
+					<div class="whiteP col"></div>
+					<div class="yellowP col"></div>
+				</div>
+				<div class="eraceBox">
+					<img src="image/UI/era.png" class="eraBut">
+				</div>
+				<div class="crewBox">
+					<img class="drag-and-drop cc1 black" src="image/crewIcon/black.PNG">
+					<img class="drag-and-drop cc2 blue" src="image/crewIcon/blue.PNG">
+					<img class="drag-and-drop cc3 brown" src="image/crewIcon/brown.PNG">
+					<img class="drag-and-drop cc4 green" src="image/crewIcon/green.PNG">
+					<img class="drag-and-drop cc5 lightblue" src="image/crewIcon/lightblue.PNG">
+					<img class="drag-and-drop cc6 lime" src="image/crewIcon/lime.PNG">
+					<img class="drag-and-drop cc7 orange" src="image/crewIcon/orange.PNG">
+					<img class="drag-and-drop cc8 pink" src="image/crewIcon/pink.PNG">
+					<img class="drag-and-drop cc9 purple" src="image/crewIcon/purple.PNG">
+					<img class="drag-and-drop cc10 red" src="image/crewIcon/red.PNG">
+					<img class="drag-and-drop cc11 white" src="image/crewIcon/white.PNG">
+					<img class="drag-and-drop cc12 yellow" src="image/crewIcon/yellow.PNG">
+					<img class="drag-and-drop rep" src="image/Report.png">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="map_tab">
+		<div class="Mtab Mtab6 tabHide">
+			<span>Day6</span>
+		</div>
+		<div class="page pageHide page6">
+			<canvas class="mapCan" id="can6"></canvas>
+			<img src="image/skeldMap.png" class="mapBox">
+			<div class="paintBox">
+				<div class="colorBox">
+					<div class="blackP col add_col_choice"></div>
+					<div class="blueP col"></div>
+					<div class="brownP col"></div>
+					<div class="greenP col"></div>
+					<div class="lightblueP col"></div>
+					<div class="limeP col"></div>
+					<div class="orangeP col"></div>
+					<div class="pinkP col"></div>
+					<div class="purpleP col"></div>
+					<div class="redP col"></div>
+					<div class="whiteP col"></div>
+					<div class="yellowP col"></div>
+				</div>
+				<div class="eraceBox">
+					<img src="image/UI/era.png" class="eraBut">
+				</div>
+				<div class="crewBox">
+					<img class="drag-and-drop cc1 black" src="image/crewIcon/black.PNG">
+					<img class="drag-and-drop cc2 blue" src="image/crewIcon/blue.PNG">
+					<img class="drag-and-drop cc3 brown" src="image/crewIcon/brown.PNG">
+					<img class="drag-and-drop cc4 green" src="image/crewIcon/green.PNG">
+					<img class="drag-and-drop cc5 lightblue" src="image/crewIcon/lightblue.PNG">
+					<img class="drag-and-drop cc6 lime" src="image/crewIcon/lime.PNG">
+					<img class="drag-and-drop cc7 orange" src="image/crewIcon/orange.PNG">
+					<img class="drag-and-drop cc8 pink" src="image/crewIcon/pink.PNG">
+					<img class="drag-and-drop cc9 purple" src="image/crewIcon/purple.PNG">
+					<img class="drag-and-drop cc10 red" src="image/crewIcon/red.PNG">
+					<img class="drag-and-drop cc11 white" src="image/crewIcon/white.PNG">
+					<img class="drag-and-drop cc12 yellow" src="image/crewIcon/yellow.PNG">
+					<img class="drag-and-drop rep" src="image/Report.png">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="matesBox">
+		<img class="uMates1 black" src="image/crewIcon/black.PNG">
+		<img class="uMates2 blue" src="image/crewIcon/blue.PNG">
+		<img class="uMates3 brown" src="image/crewIcon/brown.PNG">
+		<img class="uMates4 green" src="image/crewIcon/green.PNG">
+		<img class="uMates5 lightblue" src="image/crewIcon/lightblue.PNG">
+		<img class="uMates6 lime" src="image/crewIcon/lime.PNG">
+		<img class="uMates7 orange" src="image/crewIcon/orange.PNG">
+		<img class="uMates8 pink" src="image/crewIcon/pink.PNG">
+		<img class="uMates9 purple" src="image/crewIcon/purple.PNG">
+		<img class="uMates10 red" src="image/crewIcon/red.PNG">
+		<img class="uMates11 white" src="image/crewIcon/white.PNG">
+		<img class="uMates12 yellow" src="image/crewIcon/yellow.PNG">
+	</section>
+	<section class="mapChangeBox">
+		<img src="image/skeld.PNG" class="skeldChange">
+		<img src="image/mirahq.PNG" class="mirahqChange">
+		<img src="image/polus.PNG" class="polusChange">
+		<img src="image/airship.PNG" class="airshipChange">
+	</section>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
