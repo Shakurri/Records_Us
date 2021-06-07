@@ -553,7 +553,7 @@ $('.Mtab6').on('click',function () {
   });
 
   $('.brownP').on('click',function () {
-    selectColor="#72491";
+    selectColor="#72491e";
     $('.col').removeClass('add_col_choice');
 
     if(!$(this).hasClass('add_col_choice')){
