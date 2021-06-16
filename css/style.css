@@ -160,7 +160,7 @@ body {
 
 .player_tab .page .joinBox div {
   text-align: center;
-  width: 50%;
+  width: 33%;
   height: 15%;
 }
 
@@ -169,7 +169,7 @@ body {
 }
 
 .player_tab .page .joinBox div img {
-  width: 32%;
+  width: 45%;
 }
 
 .player_tab .page .joinBox span {
@@ -446,7 +446,7 @@ body {
 
 .map_tab .page .paintBox .colorBox div {
   width: 15%;
-  height: 40%;
+  height: 30%;
   border-radius: 2px;
   cursor: pointer;
 }
@@ -499,6 +499,30 @@ body {
   background-color: #f5f558;
 }
 
+.map_tab .page .paintBox .colorBox .tanP {
+  background-color: #969682;
+}
+
+.map_tab .page .paintBox .colorBox .coralP {
+  background-color: #d28278;
+}
+
+.map_tab .page .paintBox .colorBox .bananaP {
+  background-color: #f0e6b4;
+}
+
+.map_tab .page .paintBox .colorBox .roseP {
+  background-color: #e6d2dc;
+}
+
+.map_tab .page .paintBox .colorBox .grayP {
+  background-color: #828ca0;
+}
+
+.map_tab .page .paintBox .colorBox .maroonP {
+  background-color: #82001e;
+}
+
 .map_tab .page .paintBox .eraceBox {
   width: 20%;
   text-align: center;
@@ -518,11 +542,12 @@ body {
 }
 
 .map_tab .page .paintBox .crewBox img {
-  width: 4vw;
+  width: 3.5vw;
 }
 
 .map_tab .page .paintBox .crewBox .rep {
-  top: 10vw;
+  top: 6vw;
+  left: 24vw;
   z-index: 120;
 }
 
@@ -535,7 +560,7 @@ body {
 }
 
 .matesBox img {
-  width: 6vw;
+  width: 4.7vw;
   height: 6vw;
   z-index: 120;
 }
@@ -556,15 +581,15 @@ body {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 12vw;
-  height: 17vh;
+  width: 29vw;
+  height: 10vh;
   background-color: #777;
   border-radius: 5px 0 0 0;
 }
 
 .mapChangeBox img {
-  width: 38%;
-  max-height: 45%;
+  width: 20%;
+  max-height: 80%;
   -webkit-filter: drop-shadow(0 3px 0 rgba(0, 0, 0, 0.2));
           filter: drop-shadow(0 3px 0 rgba(0, 0, 0, 0.2));
   cursor: pointer;
@@ -597,51 +622,75 @@ body {
 }
 
 .c1 {
-  left: 5vw;
+  left: 3.4vw;
 }
 
 .c2 {
-  left: 10vw;
+  left: 6.8vw;
 }
 
 .c3 {
-  left: 15vw;
+  left: 10.2vw;
 }
 
 .c4 {
-  left: 20vw;
+  left: 13.6vw;
 }
 
 .c5 {
-  left: 25vw;
+  left: 17vw;
 }
 
 .c6 {
-  left: 30vw;
+  left: 20.4vw;
 }
 
 .c7 {
-  left: 35vw;
+  left: 23.8vw;
 }
 
 .c8 {
-  left: 40vw;
+  left: 27.2vw;
 }
 
 .c9 {
-  left: 45vw;
+  left: 30.6vw;
 }
 
 .c10 {
-  left: 50vw;
+  left: 34vw;
 }
 
 .c11 {
-  left: 55vw;
+  left: 37.4vw;
 }
 
 .c12 {
-  left: 60vw;
+  left: 40.8vw;
+}
+
+.c13 {
+  left: 44.2vw;
+}
+
+.c14 {
+  left: 47.6vw;
+}
+
+.c15 {
+  left: 51vw;
+}
+
+.c16 {
+  left: 54.4vw;
+}
+
+.c17 {
+  left: 57.8vw;
+}
+
+.c18 {
+  left: 61.2vw;
 }
 
 .cc1 {
@@ -649,23 +698,23 @@ body {
 }
 
 .cc2 {
-  left: 4.4vw;
+  left: 4vw;
 }
 
 .cc3 {
-  left: 8.8vw;
+  left: 8vw;
 }
 
 .cc4 {
-  left: 13.2vw;
+  left: 12vw;
 }
 
 .cc5 {
-  left: 17.6vw;
+  left: 16vw;
 }
 
 .cc6 {
-  left: 22vw;
+  left: 20vw;
 }
 
 .cc7 {
@@ -674,27 +723,57 @@ body {
 }
 
 .cc8 {
-  left: 4.4vw;
+  left: 4vw;
   top: 5vw;
 }
 
 .cc9 {
-  left: 8.8vw;
+  left: 8vw;
   top: 5vw;
 }
 
 .cc10 {
-  left: 13.2vw;
+  left: 12vw;
   top: 5vw;
 }
 
 .cc11 {
-  left: 17.6vw;
+  left: 16vw;
   top: 5vw;
 }
 
 .cc12 {
-  left: 22vw;
+  left: 20vw;
   top: 5vw;
+}
+
+.cc13 {
+  left: 0vw;
+  top: 10vw;
+}
+
+.cc14 {
+  left: 4vw;
+  top: 10vw;
+}
+
+.cc15 {
+  left: 8vw;
+  top: 10vw;
+}
+
+.cc16 {
+  left: 12vw;
+  top: 10vw;
+}
+
+.cc17 {
+  left: 16vw;
+  top: 10vw;
+}
+
+.cc18 {
+  left: 20vw;
+  top: 10vw;
 }
 /*# sourceMappingURL=style.css.map */

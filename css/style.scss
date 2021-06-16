@@ -107,7 +107,6 @@ body{
         align-items: center;
         justify-content: center;
         .joinBox{
-
             border: solid 4px #333;
             border-radius: 5px;
             width:26%;
@@ -119,13 +118,13 @@ body{
             flex-wrap: wrap;
             div{
                 text-align: center;
-                width:50%;
+                width:33%;
                 height:15%;
                 .check{
                     cursor: pointer;
                 }
                 img{
-                    width:32%;
+                    width:45%;
                 }
             }
             span{
@@ -322,7 +321,7 @@ body{
                 background-color: #333;
                 div{
                     width:15%;
-                    height:40%;
+                    height:30%;
                     border-radius: 2px;
                     cursor: pointer;
                 }
@@ -362,6 +361,24 @@ body{
                 .yellowP{
                     background-color: #f5f558;
                 }
+                .tanP{
+                    background-color: #969682;
+                }
+                .coralP{
+                    background-color: #d28278;
+                }
+                .bananaP{
+                    background-color: #f0e6b4;
+                }
+                .roseP{
+                    background-color: #e6d2dc;
+                }
+                .grayP{
+                    background-color: #828ca0;
+                }
+                .maroonP{
+                    background-color: #82001e;
+                }
             }
             .eraceBox{
                 width:20%;
@@ -377,10 +394,11 @@ body{
                 height:40%;
                 position: relative;
                 img{
-                    width:4vw;
+                    width:3.5vw;
                 }
                 .rep{
-                    top:10vw;
+                    top:6vw;
+                    left:24vw;
                     z-index: 120;
                 }
             }
@@ -393,7 +411,7 @@ body{
     bottom:0;
     display: flex;
     img{
-        width:6vw;
+        width:4.7vw;
         height:6vw;
         z-index:120;
     }
@@ -408,13 +426,13 @@ body{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    width:12vw;
-    height:17vh;
+    width:29vw;
+    height:10vh;
     background-color: #777;
     border-radius: 5px 0 0 0;
     img{
-        width:38%;
-        max-height:45%;
+        width:20%;
+        max-height:80%;
         filter:drop-shadow(0 3px 0 rgba(0, 0, 0, 0.2));
         cursor: pointer;
     }
@@ -429,6 +447,7 @@ body{
 .drag {
     z-index: 101;
 }
+
 
 .crewHide{
     display: none !important;
@@ -445,9 +464,9 @@ body{
 }
 
 $i: 1;
-$wid:5vw;
+$wid:3.4vw;
 
-@while $i <= 12 {
+@while $i <= 18 {
   .c#{$i} {
     left: $wid * $i;
   }
@@ -455,7 +474,7 @@ $wid:5vw;
 }
 
 $j: 0;
-$wid:4.4vw;
+$wid:4vw;
 @while $j <= 5 {
     .cc#{$j+1} {
       left: $wid * $j;
@@ -463,13 +482,22 @@ $wid:4.4vw;
     $j: $j + 1;
   }
 $k: 0;
-$wid:4.4vw;
+$wid:4vw;
 @while $k <= 5 {
     .cc#{($k+7)} {
       left: $wid * $k;
       top:5vw;
     }
     $k: $k + 1;
+  }
+$l: 0;
+$wid:4vw;
+@while $l <= 5 {
+    .cc#{($l+13)} {
+      left: $wid * $l;
+      top:10vw;
+    }
+    $l: $l + 1;
   }
 
 

@@ -82,130 +82,283 @@
 
 
 
-var list=['black','blue','brown','green','lightblue','lome','orange','pink','pink','purple','red','white','yellow'];
+var list=['black','blue','brown','green','lightblue','lime','orange','pink','purple','red','white','yellow','tan','coral','banana','rose','gray','maroon'];
+var dispNum=document.getElementById('numOfplayer');
+var num=0;
 for(let i=0;i<list.length;i++){
-  list[i]=true;
+  list[i]=false;
 }
+$('.black').addClass('crewHide');
+$('.blue').addClass('crewHide');
+$('.brown').addClass('crewHide');
+$('.green').addClass('crewHide');
+$('.lightblue').addClass('crewHide');
+$('.lime').addClass('crewHide');
+$('.orange').addClass('crewHide');
+$('.pink').addClass('crewHide');
+$('.purple').addClass('crewHide');
+$('.red').addClass('crewHide');
+$('.white').addClass('crewHide');
+$('.yellow').addClass('crewHide');
+$('.tan').addClass('crewHide');
+$('.coral').addClass('crewHide');
+$('.banana').addClass('crewHide');
+$('.rose').addClass('crewHide');
+$('.gray').addClass('crewHide');
+$('.maroon').addClass('crewHide');
+
 
 $('.checkBlack').on('click',function(){
   if(list[0]){
+    num--;
     $('.checkBlack').attr('src', 'image/UI/checkNull.png');
     $('.black').addClass('crewHide');
   }else{
+    num++;
     $('.checkBlack').attr('src', 'image/UI/checked.png');
     $('.black').removeClass('crewHide');
   }
   list[0]=!list[0];
+  console.log(num);
+  dispNum.innerHTML="<span>参加者："+num+"人</span>";
 });
 $('.checkBlue').on('click',function(){
   if(list[1]){
+    num--;
     $('.checkBlue').attr('src', 'image/UI/checkNull.png');
     $('.blue').addClass('crewHide');
   }else{
+    num++;
     $('.checkBlue').attr('src', 'image/UI/checked.png');
     $('.blue').removeClass('crewHide');
   }
   list[1]=!list[1];
+  console.log(num);
+  dispNum.innerHTML="<span>参加者："+num+"人</span>";
 });
 $('.checkBrown').on('click',function(){
   if(list[2]){
+    num--;
     $('.checkBrown').attr('src', 'image/UI/checkNull.png');
     $('.brown').addClass('crewHide');
   }else{
+    num++;
     $('.checkBrown').attr('src', 'image/UI/checked.png');
     $('.brown').removeClass('crewHide');
   }
   list[2]=!list[2];
+  console.log(num);
+  dispNum.innerHTML="<span>参加者："+num+"人</span>";
 });
 $('.checkGreen').on('click',function(){
   if(list[3]){
+    num--;
     $('.checkGreen').attr('src', 'image/UI/checkNull.png');
     $('.green').addClass('crewHide');
   }else{
+    num++;
     $('.checkGreen').attr('src', 'image/UI/checked.png');
     $('.green').removeClass('crewHide');
   }
   list[3]=!list[3];
+  console.log(num);
+  dispNum.innerHTML="<span>参加者："+num+"人</span>";
 });
 $('.checkLightblue').on('click',function(){
   if(list[4]){
+    num--;
     $('.checkLightblue').attr('src', 'image/UI/checkNull.png');
     $('.lightblue').addClass('crewHide');
   }else{
+    num++;
     $('.checkLightblue').attr('src', 'image/UI/checked.png');
     $('.lightblue').removeClass('crewHide');
   }
   list[4]=!list[4];
+  console.log(num);
+  dispNum.innerHTML="<span>参加者："+num+"人</span>";
 });
 $('.checkLime').on('click',function(){
   if(list[5]){
+    num--;
     $('.checkLime').attr('src', 'image/UI/checkNull.png');
     $('.lime').addClass('crewHide');
   }else{
+    num++;
     $('.checkLime').attr('src', 'image/UI/checked.png');
     $('.lime').removeClass('crewHide');
   }
   list[5]=!list[5];
+  console.log(num);
+  dispNum.innerHTML="<span>参加者："+num+"人</span>";
 });
 $('.checkOrange').on('click',function(){
   if(list[6]){
+    num--;
     $('.checkOrange').attr('src', 'image/UI/checkNull.png');
     $('.orange').addClass('crewHide');
   }else{
+    num++;
     $('.checkOrange').attr('src', 'image/UI/checked.png');
     $('.orange').removeClass('crewHide');
   }
   list[6]=!list[6];
+  console.log(num);
+  dispNum.innerHTML="<span>参加者："+num+"人</span>";
 });
 $('.checkPink').on('click',function(){
   if(list[7]){
+    num--;
     $('.checkPink').attr('src', 'image/UI/checkNull.png');
     $('.pink').addClass('crewHide');
   }else{
+    num++;
     $('.checkPink').attr('src', 'image/UI/checked.png');
     $('.pink').removeClass('crewHide');
   }
   list[7]=!list[7];
+  console.log(num);
+  dispNum.innerHTML="<span>参加者："+num+"人</span>";
 });
 $('.checkPurple').on('click',function(){
   if(list[8]){
+    num--;
     $('.checkPurple').attr('src', 'image/UI/checkNull.png');
     $('.purple').addClass('crewHide');
   }else{
+    num++;
     $('.checkPurple').attr('src', 'image/UI/checked.png');
     $('.purple').removeClass('crewHide');
   }
   list[8]=!list[8];
+  console.log(num);
+  dispNum.innerHTML="<span>参加者："+num+"人</span>";
 });
 $('.checkRed').on('click',function(){
   if(list[9]){
+    num--;
     $('.checkRed').attr('src', 'image/UI/checkNull.png');
     $('.red').addClass('crewHide');
   }else{
+    num++;
     $('.checkRed').attr('src', 'image/UI/checked.png');
     $('.red').removeClass('crewHide');
   }
   list[9]=!list[9];
+  console.log(num);
+  dispNum.innerHTML="<span>参加者："+num+"人</span>";
 });
 $('.checkWhite').on('click',function(){
   if(list[10]){
+    num--;
     $('.checkWhite').attr('src', 'image/UI/checkNull.png');
     $('.white').addClass('crewHide');
   }else{
+    num++;
     $('.checkWhite').attr('src', 'image/UI/checked.png');
     $('.white').removeClass('crewHide');
   }
   list[10]=!list[10];
+  console.log(num);
+  dispNum.innerHTML="<span>参加者："+num+"人</span>";
 });
 $('.checkYellow').on('click',function(){
   if(list[11]){
+    num--;
     $('.checkYellow').attr('src', 'image/UI/checkNull.png');
     $('.yellow').addClass('crewHide');
   }else{
+    num++;
     $('.checkYellow').attr('src', 'image/UI/checked.png');
     $('.yellow').removeClass('crewHide');
   }
   list[11]=!list[11];
+  console.log(num);
+  dispNum.innerHTML="<span>参加者："+num+"人</span>";
+});
+$('.checkTan').on('click',function(){
+  if(list[12]){
+    num--;
+    $('.checkTan').attr('src', 'image/UI/checkNull.png');
+    $('.tan').addClass('crewHide');
+  }else{
+    num++;
+    $('.checkTan').attr('src', 'image/UI/checked.png');
+    $('.tan').removeClass('crewHide');
+  }
+  list[12]=!list[12];
+  console.log(num);
+  dispNum.innerHTML="<span>参加者："+num+"人</span>";
+});
+$('.checkCoral').on('click',function(){
+  if(list[13]){
+    num--;
+    $('.checkCoral').attr('src', 'image/UI/checkNull.png');
+    $('.coral').addClass('crewHide');
+  }else{
+    num++;
+    $('.checkCoral').attr('src', 'image/UI/checked.png');
+    $('.coral').removeClass('crewHide');
+  }
+  list[13]=!list[13];
+  console.log(num);
+  dispNum.innerHTML="<span>参加者："+num+"人</span>";
+});
+$('.checkBanana').on('click',function(){
+  if(list[14]){
+    num--;
+    $('.checkBanana').attr('src', 'image/UI/checkNull.png');
+    $('.banana').addClass('crewHide');
+  }else{
+    num++;
+    $('.checkBanana').attr('src', 'image/UI/checked.png');
+    $('.banana').removeClass('crewHide');
+  }
+  list[14]=!list[14];
+  console.log(num);
+  dispNum.innerHTML="<span>参加者："+num+"人</span>";
+});
+$('.checkRose').on('click',function(){
+  if(list[15]){
+    num--;
+    $('.checkRose').attr('src', 'image/UI/checkNull.png');
+    $('.rose').addClass('crewHide');
+  }else{
+    num++;
+    $('.checkRose').attr('src', 'image/UI/checked.png');
+    $('.rose').removeClass('crewHide');
+  }
+  list[15]=!list[15];
+  console.log(num);
+  dispNum.innerHTML="<span>参加者："+num+"人</span>";
+});
+$('.checkGray').on('click',function(){
+  if(list[16]){
+    num--;
+    $('.checkGray').attr('src', 'image/UI/checkNull.png');
+    $('.gray').addClass('crewHide');
+  }else{
+    num++;
+    $('.checkGray').attr('src', 'image/UI/checked.png');
+    $('.gray').removeClass('crewHide');
+  }
+  list[16]=!list[16];
+  console.log(num);
+  dispNum.innerHTML="<span>参加者："+num+"人</span>";
+});
+$('.checkMaroon').on('click',function(){
+  if(list[17]){
+    num--;
+    $('.checkMaroon').attr('src', 'image/UI/checkNull.png');
+    $('.maroon').addClass('crewHide');
+  }else{
+    num++;
+    $('.checkMaroon').attr('src', 'image/UI/checked.png');
+    $('.maroon').removeClass('crewHide');
+  }
+  list[17]=!list[17];
+  console.log(num);
+  dispNum.innerHTML="<span>参加者："+num+"人</span>";
 });
 
 
@@ -673,6 +826,66 @@ $('.Mtab6').on('click',function () {
     globalCompositeOperation='source-over'; 
     selectSize=5;
   });
+  $('.tanP').on('click',function () {
+    selectColor="#969682";
+    $('.col').removeClass('add_col_choice');
+    if(!$(this).hasClass('add_col_choice')){
+      $(this).addClass('add_col_choice');
+    }
+    $('.eraBut').removeClass('add_col_choice');
+    globalCompositeOperation='source-over'; 
+    selectSize=5;
+  });
+  $('.coralP').on('click',function () {
+    selectColor="#d28278";
+    $('.col').removeClass('add_col_choice');
+    if(!$(this).hasClass('add_col_choice')){
+      $(this).addClass('add_col_choice');
+    }
+    $('.eraBut').removeClass('add_col_choice');
+    globalCompositeOperation='source-over'; 
+    selectSize=5;
+  });
+  $('.bananaP').on('click',function () {
+    selectColor="#f0e6b4";
+    $('.col').removeClass('add_col_choice');
+    if(!$(this).hasClass('add_col_choice')){
+      $(this).addClass('add_col_choice');
+    }
+    $('.eraBut').removeClass('add_col_choice');
+    globalCompositeOperation='source-over'; 
+    selectSize=5;
+  });
+  $('.roseP').on('click',function () {
+    selectColor="#e6d2dc";
+    $('.col').removeClass('add_col_choice');
+    if(!$(this).hasClass('add_col_choice')){
+      $(this).addClass('add_col_choice');
+    }
+    $('.eraBut').removeClass('add_col_choice');
+    globalCompositeOperation='source-over'; 
+    selectSize=5;
+  });
+  $('.grayP').on('click',function () {
+    selectColor="#828ca0";
+    $('.col').removeClass('add_col_choice');
+    if(!$(this).hasClass('add_col_choice')){
+      $(this).addClass('add_col_choice');
+    }
+    $('.eraBut').removeClass('add_col_choice');
+    globalCompositeOperation='source-over'; 
+    selectSize=5;
+  });
+  $('.maroonP').on('click',function () {
+    selectColor="#82001e";
+    $('.col').removeClass('add_col_choice');
+    if(!$(this).hasClass('add_col_choice')){
+      $(this).addClass('add_col_choice');
+    }
+    $('.eraBut').removeClass('add_col_choice');
+    globalCompositeOperation='source-over'; 
+    selectSize=5;
+  });
 
   $('.skeldChange').on('click',function(){
     $('.mapBox').attr('src', 'image/skeldMap.png');
@@ -688,8 +901,8 @@ $('.Mtab6').on('click',function () {
   });
 
 
-  var isDead=new Array(12);
-  for(var i=0;i<12;i++){
+  var isDead=new Array(18);
+  for(var i=0;i<18;i++){
     isDead[i]=false;
   }
 
@@ -800,6 +1013,60 @@ $('.Mtab6').on('click',function () {
     }else{
       $('.yellow').attr('src', 'image/deadIcon/yellowD.PNG');
       isDead[11]=true;
+    }
+  });
+  $('.uMates13').on('click',function(){
+    if(isDead[12]){
+      $('.tan').attr('src', 'image/crewIcon/tan.PNG');
+      isDead[12]=false;
+    }else{
+      $('.tan').attr('src', 'image/deadIcon/tanD.PNG');
+      isDead[12]=true;
+    }
+  });
+  $('.uMates14').on('click',function(){
+    if(isDead[13]){
+      $('.coral').attr('src', 'image/crewIcon/coral.PNG');
+      isDead[13]=false;
+    }else{
+      $('.coral').attr('src', 'image/deadIcon/coralD.PNG');
+      isDead[13]=true;
+    }
+  });
+  $('.uMates15').on('click',function(){
+    if(isDead[14]){
+      $('.banana').attr('src', 'image/crewIcon/banana.PNG');
+      isDead[14]=false;
+    }else{
+      $('.banana').attr('src', 'image/deadIcon/bananaD.PNG');
+      isDead[14]=true;
+    }
+  });
+  $('.uMates16').on('click',function(){
+    if(isDead[15]){
+      $('.rose').attr('src', 'image/crewIcon/rose.PNG');
+      isDead[15]=false;
+    }else{
+      $('.rose').attr('src', 'image/deadIcon/roseD.PNG');
+      isDead[15]=true;
+    }
+  });
+  $('.uMates17').on('click',function(){
+    if(isDead[16]){
+      $('.gray').attr('src', 'image/crewIcon/gray.PNG');
+      isDead[16]=false;
+    }else{
+      $('.gray').attr('src', 'image/deadIcon/grayD.PNG');
+      isDead[16]=true;
+    }
+  });
+  $('.uMates18').on('click',function(){
+    if(isDead[17]){
+      $('.maroon').attr('src', 'image/crewIcon/maroon.PNG');
+      isDead[17]=false;
+    }else{
+      $('.maroon').attr('src', 'image/deadIcon/maroonD.PNG');
+      isDead[17]=true;
     }
   });
 
