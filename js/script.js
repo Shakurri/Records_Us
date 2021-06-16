@@ -909,7 +909,7 @@ $('.Mtab6').on('click',function () {
 
   $('.uMates1').on('click',function(){
     if(isDead[0]){
-      $('.black').attr('src', 'image/crewIcon/black.PNG');
+      $('.black').attr('src', 'image/crewIcon/black.png');
       isDead[0]=false;
     }else{
       $('.black').attr('src', 'image/deadIcon/blackD.PNG');
@@ -918,7 +918,7 @@ $('.Mtab6').on('click',function () {
   });
   $('.uMates2').on('click',function(){
     if(isDead[1]){
-      $('.blue').attr('src', 'image/crewIcon/blue.PNG');
+      $('.blue').attr('src', 'image/crewIcon/blue.png');
       isDead[1]=false;
     }else{
       $('.blue').attr('src', 'image/deadIcon/blueD.PNG');
@@ -927,7 +927,7 @@ $('.Mtab6').on('click',function () {
   });
   $('.uMates3').on('click',function(){
     if(isDead[2]){
-      $('.brown').attr('src', 'image/crewIcon/brown.PNG');
+      $('.brown').attr('src', 'image/crewIcon/brown.png');
       isDead[2]=false;
     }else{
       $('.brown').attr('src', 'image/deadIcon/brownD.PNG');
@@ -936,7 +936,7 @@ $('.Mtab6').on('click',function () {
   });
   $('.uMates4').on('click',function(){
     if(isDead[3]){
-      $('.green').attr('src', 'image/crewIcon/green.PNG');
+      $('.green').attr('src', 'image/crewIcon/green.png');
       isDead[3]=false;
     }else{
       $('.green').attr('src', 'image/deadIcon/greenD.PNG');
@@ -945,7 +945,7 @@ $('.Mtab6').on('click',function () {
   });
   $('.uMates5').on('click',function(){
     if(isDead[4]){
-      $('.lightblue').attr('src', 'image/crewIcon/lightblue.PNG');
+      $('.lightblue').attr('src', 'image/crewIcon/lightblue.png');
       isDead[4]=false;
     }else{
       $('.lightblue').attr('src', 'image/deadIcon/lightblueD.PNG');
@@ -954,7 +954,7 @@ $('.Mtab6').on('click',function () {
   });
   $('.uMates6').on('click',function(){
     if(isDead[5]){
-      $('.lime').attr('src', 'image/crewIcon/lime.PNG');
+      $('.lime').attr('src', 'image/crewIcon/lime.png');
       isDead[5]=false;
     }else{
       $('.lime').attr('src', 'image/deadIcon/limeD.PNG');
@@ -963,7 +963,7 @@ $('.Mtab6').on('click',function () {
   });
   $('.uMates7').on('click',function(){
     if(isDead[6]){
-      $('.orange').attr('src', 'image/crewIcon/orange.PNG');
+      $('.orange').attr('src', 'image/crewIcon/orange.png');
       isDead[6]=false;
     }else{
       $('.orange').attr('src', 'image/deadIcon/orangeD.PNG');
@@ -972,7 +972,7 @@ $('.Mtab6').on('click',function () {
   });
   $('.uMates8').on('click',function(){
     if(isDead[7]){
-      $('.pink').attr('src', 'image/crewIcon/pink.PNG');
+      $('.pink').attr('src', 'image/crewIcon/pink.png');
       isDead[7]=false;
     }else{
       $('.pink').attr('src', 'image/deadIcon/pinkD.PNG');
@@ -981,7 +981,7 @@ $('.Mtab6').on('click',function () {
   });
   $('.uMates9').on('click',function(){
     if(isDead[8]){
-      $('.purple').attr('src', 'image/crewIcon/purple.PNG');
+      $('.purple').attr('src', 'image/crewIcon/purple.png');
       isDead[8]=false;
     }else{
       $('.purple').attr('src', 'image/deadIcon/purpleD.PNG');
@@ -999,7 +999,7 @@ $('.Mtab6').on('click',function () {
   });
   $('.uMates11').on('click',function(){
     if(isDead[10]){
-      $('.white').attr('src', 'image/crewIcon/white.PNG');
+      $('.white').attr('src', 'image/crewIcon/white.png');
       isDead[10]=false;
     }else{
       $('.white').attr('src', 'image/deadIcon/whiteD.PNG');
@@ -1008,7 +1008,7 @@ $('.Mtab6').on('click',function () {
   });
   $('.uMates12').on('click',function(){
     if(isDead[11]){
-      $('.yellow').attr('src', 'image/crewIcon/yellow.PNG');
+      $('.yellow').attr('src', 'image/crewIcon/yellow.png');
       isDead[11]=false;
     }else{
       $('.yellow').attr('src', 'image/deadIcon/yellowD.PNG');
@@ -1017,7 +1017,7 @@ $('.Mtab6').on('click',function () {
   });
   $('.uMates13').on('click',function(){
     if(isDead[12]){
-      $('.tan').attr('src', 'image/crewIcon/tan.PNG');
+      $('.tan').attr('src', 'image/crewIcon/tan.png');
       isDead[12]=false;
     }else{
       $('.tan').attr('src', 'image/deadIcon/tanD.PNG');
@@ -1026,7 +1026,7 @@ $('.Mtab6').on('click',function () {
   });
   $('.uMates14').on('click',function(){
     if(isDead[13]){
-      $('.coral').attr('src', 'image/crewIcon/coral.PNG');
+      $('.coral').attr('src', 'image/crewIcon/coral.png');
       isDead[13]=false;
     }else{
       $('.coral').attr('src', 'image/deadIcon/coralD.PNG');
@@ -1035,7 +1035,7 @@ $('.Mtab6').on('click',function () {
   });
   $('.uMates15').on('click',function(){
     if(isDead[14]){
-      $('.banana').attr('src', 'image/crewIcon/banana.PNG');
+      $('.banana').attr('src', 'image/crewIcon/banana.png');
       isDead[14]=false;
     }else{
       $('.banana').attr('src', 'image/deadIcon/bananaD.PNG');
@@ -1044,7 +1044,7 @@ $('.Mtab6').on('click',function () {
   });
   $('.uMates16').on('click',function(){
     if(isDead[15]){
-      $('.rose').attr('src', 'image/crewIcon/rose.PNG');
+      $('.rose').attr('src', 'image/crewIcon/rose.png');
       isDead[15]=false;
     }else{
       $('.rose').attr('src', 'image/deadIcon/roseD.PNG');
@@ -1053,7 +1053,7 @@ $('.Mtab6').on('click',function () {
   });
   $('.uMates17').on('click',function(){
     if(isDead[16]){
-      $('.gray').attr('src', 'image/crewIcon/gray.PNG');
+      $('.gray').attr('src', 'image/crewIcon/gray.png');
       isDead[16]=false;
     }else{
       $('.gray').attr('src', 'image/deadIcon/grayD.PNG');
@@ -1062,7 +1062,7 @@ $('.Mtab6').on('click',function () {
   });
   $('.uMates18').on('click',function(){
     if(isDead[17]){
-      $('.maroon').attr('src', 'image/crewIcon/maroon.PNG');
+      $('.maroon').attr('src', 'image/crewIcon/maroon.png');
       isDead[17]=false;
     }else{
       $('.maroon').attr('src', 'image/deadIcon/maroonD.PNG');
