@@ -990,7 +990,7 @@ $('.Mtab6').on('click',function () {
   });
   $('.uMates10').on('click',function(){
     if(isDead[9]){
-      $('.red').attr('src', 'image/crewIcon/red.PNG');
+      $('.red').attr('src', 'image/crewIcon/red.png');
       isDead[9]=false;
     }else{
       $('.red').attr('src', 'image/deadIcon/redD.PNG');
