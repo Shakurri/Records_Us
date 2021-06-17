@@ -82,278 +82,279 @@
 
 
 
-var list=['black','blue','brown','green','lightblue','lime','orange','pink','purple','red','white','yellow','tan','coral','banana','rose','gray','maroon'];
+var colName=['black','blue','brown','green','lightblue','lime','orange','pink','purple','red','white','yellow','tan','coral','banana','rose','gray','maroon'];
+var list=new Array(colName.length);
+var listP=localStorage.getItem("joinParum");
+var listPS=listP.split(",");
 var dispNum=document.getElementById('numOfplayer');
 var num=0;
+var numP=localStorage.getItem("joinNum");
 for(let i=0;i<list.length;i++){
+  $('.'+colName[i]).addClass('crewHide');
   list[i]=false;
+  if(listP===null){}else{
+    if(JSON.parse(listPS[i].toLowerCase())){
+      list[i]=true;
+      $('.'+colName[i]).removeClass('crewHide');
+      $('.check'+colName[i]).attr('src', 'image/UI/checked.png');
+    }
+  }
+  if(numP===null){}else{
+    num=numP;
+    dispNum.innerHTML="<span>参加者："+num+"人</span>";
+  }
 }
-$('.black').addClass('crewHide');
-$('.blue').addClass('crewHide');
-$('.brown').addClass('crewHide');
-$('.green').addClass('crewHide');
-$('.lightblue').addClass('crewHide');
-$('.lime').addClass('crewHide');
-$('.orange').addClass('crewHide');
-$('.pink').addClass('crewHide');
-$('.purple').addClass('crewHide');
-$('.red').addClass('crewHide');
-$('.white').addClass('crewHide');
-$('.yellow').addClass('crewHide');
-$('.tan').addClass('crewHide');
-$('.coral').addClass('crewHide');
-$('.banana').addClass('crewHide');
-$('.rose').addClass('crewHide');
-$('.gray').addClass('crewHide');
-$('.maroon').addClass('crewHide');
+console.log(list);
+console.log(listPS);
 
 
-$('.checkBlack').on('click',function(){
+
+$('.checkDBlack').on('click',function(){
   if(list[0]){
     num--;
-    $('.checkBlack').attr('src', 'image/UI/checkNull.png');
+    $('.checkblack').attr('src', 'image/UI/checkNull.png');
     $('.black').addClass('crewHide');
   }else{
     num++;
-    $('.checkBlack').attr('src', 'image/UI/checked.png');
+    $('.checkblack').attr('src', 'image/UI/checked.png');
     $('.black').removeClass('crewHide');
   }
   list[0]=!list[0];
   console.log(num);
   dispNum.innerHTML="<span>参加者："+num+"人</span>";
 });
-$('.checkBlue').on('click',function(){
+$('.checkDBlue').on('click',function(){
   if(list[1]){
     num--;
-    $('.checkBlue').attr('src', 'image/UI/checkNull.png');
+    $('.checkblue').attr('src', 'image/UI/checkNull.png');
     $('.blue').addClass('crewHide');
   }else{
     num++;
-    $('.checkBlue').attr('src', 'image/UI/checked.png');
+    $('.checkblue').attr('src', 'image/UI/checked.png');
     $('.blue').removeClass('crewHide');
   }
   list[1]=!list[1];
   console.log(num);
   dispNum.innerHTML="<span>参加者："+num+"人</span>";
 });
-$('.checkBrown').on('click',function(){
+$('.checkDBrown').on('click',function(){
   if(list[2]){
     num--;
-    $('.checkBrown').attr('src', 'image/UI/checkNull.png');
+    $('.checkbrown').attr('src', 'image/UI/checkNull.png');
     $('.brown').addClass('crewHide');
   }else{
     num++;
-    $('.checkBrown').attr('src', 'image/UI/checked.png');
+    $('.checkbrown').attr('src', 'image/UI/checked.png');
     $('.brown').removeClass('crewHide');
   }
   list[2]=!list[2];
   console.log(num);
   dispNum.innerHTML="<span>参加者："+num+"人</span>";
 });
-$('.checkGreen').on('click',function(){
+$('.checkDGreen').on('click',function(){
   if(list[3]){
     num--;
-    $('.checkGreen').attr('src', 'image/UI/checkNull.png');
+    $('.checkgreen').attr('src', 'image/UI/checkNull.png');
     $('.green').addClass('crewHide');
   }else{
     num++;
-    $('.checkGreen').attr('src', 'image/UI/checked.png');
+    $('.checkgreen').attr('src', 'image/UI/checked.png');
     $('.green').removeClass('crewHide');
   }
   list[3]=!list[3];
   console.log(num);
   dispNum.innerHTML="<span>参加者："+num+"人</span>";
 });
-$('.checkLightblue').on('click',function(){
+$('.checkDLightblue').on('click',function(){
   if(list[4]){
     num--;
-    $('.checkLightblue').attr('src', 'image/UI/checkNull.png');
+    $('.checklightblue').attr('src', 'image/UI/checkNull.png');
     $('.lightblue').addClass('crewHide');
   }else{
     num++;
-    $('.checkLightblue').attr('src', 'image/UI/checked.png');
+    $('.checklightblue').attr('src', 'image/UI/checked.png');
     $('.lightblue').removeClass('crewHide');
   }
   list[4]=!list[4];
   console.log(num);
   dispNum.innerHTML="<span>参加者："+num+"人</span>";
 });
-$('.checkLime').on('click',function(){
+$('.checkDLime').on('click',function(){
   if(list[5]){
     num--;
-    $('.checkLime').attr('src', 'image/UI/checkNull.png');
+    $('.checklime').attr('src', 'image/UI/checkNull.png');
     $('.lime').addClass('crewHide');
   }else{
     num++;
-    $('.checkLime').attr('src', 'image/UI/checked.png');
+    $('.checklime').attr('src', 'image/UI/checked.png');
     $('.lime').removeClass('crewHide');
   }
   list[5]=!list[5];
   console.log(num);
   dispNum.innerHTML="<span>参加者："+num+"人</span>";
 });
-$('.checkOrange').on('click',function(){
+$('.checkDOrange').on('click',function(){
   if(list[6]){
     num--;
-    $('.checkOrange').attr('src', 'image/UI/checkNull.png');
+    $('.checkorange').attr('src', 'image/UI/checkNull.png');
     $('.orange').addClass('crewHide');
   }else{
     num++;
-    $('.checkOrange').attr('src', 'image/UI/checked.png');
+    $('.checkorange').attr('src', 'image/UI/checked.png');
     $('.orange').removeClass('crewHide');
   }
   list[6]=!list[6];
   console.log(num);
   dispNum.innerHTML="<span>参加者："+num+"人</span>";
 });
-$('.checkPink').on('click',function(){
+$('.checkDPink').on('click',function(){
   if(list[7]){
     num--;
-    $('.checkPink').attr('src', 'image/UI/checkNull.png');
+    $('.checkpink').attr('src', 'image/UI/checkNull.png');
     $('.pink').addClass('crewHide');
   }else{
     num++;
-    $('.checkPink').attr('src', 'image/UI/checked.png');
+    $('.checkpink').attr('src', 'image/UI/checked.png');
     $('.pink').removeClass('crewHide');
   }
   list[7]=!list[7];
   console.log(num);
   dispNum.innerHTML="<span>参加者："+num+"人</span>";
 });
-$('.checkPurple').on('click',function(){
+$('.checkDPurple').on('click',function(){
   if(list[8]){
     num--;
-    $('.checkPurple').attr('src', 'image/UI/checkNull.png');
+    $('.checkpurple').attr('src', 'image/UI/checkNull.png');
     $('.purple').addClass('crewHide');
   }else{
     num++;
-    $('.checkPurple').attr('src', 'image/UI/checked.png');
+    $('.checkpurple').attr('src', 'image/UI/checked.png');
     $('.purple').removeClass('crewHide');
   }
   list[8]=!list[8];
   console.log(num);
   dispNum.innerHTML="<span>参加者："+num+"人</span>";
 });
-$('.checkRed').on('click',function(){
+$('.checkDRed').on('click',function(){
   if(list[9]){
     num--;
-    $('.checkRed').attr('src', 'image/UI/checkNull.png');
+    $('.checkred').attr('src', 'image/UI/checkNull.png');
     $('.red').addClass('crewHide');
   }else{
     num++;
-    $('.checkRed').attr('src', 'image/UI/checked.png');
+    $('.checkred').attr('src', 'image/UI/checked.png');
     $('.red').removeClass('crewHide');
   }
   list[9]=!list[9];
   console.log(num);
   dispNum.innerHTML="<span>参加者："+num+"人</span>";
 });
-$('.checkWhite').on('click',function(){
+$('.checkDWhite').on('click',function(){
   if(list[10]){
     num--;
-    $('.checkWhite').attr('src', 'image/UI/checkNull.png');
+    $('.checkwhite').attr('src', 'image/UI/checkNull.png');
     $('.white').addClass('crewHide');
   }else{
     num++;
-    $('.checkWhite').attr('src', 'image/UI/checked.png');
+    $('.checkwhite').attr('src', 'image/UI/checked.png');
     $('.white').removeClass('crewHide');
   }
   list[10]=!list[10];
   console.log(num);
   dispNum.innerHTML="<span>参加者："+num+"人</span>";
 });
-$('.checkYellow').on('click',function(){
+$('.checkDYellow').on('click',function(){
   if(list[11]){
     num--;
-    $('.checkYellow').attr('src', 'image/UI/checkNull.png');
+    $('.checkyellow').attr('src', 'image/UI/checkNull.png');
     $('.yellow').addClass('crewHide');
   }else{
     num++;
-    $('.checkYellow').attr('src', 'image/UI/checked.png');
+    $('.checkyellow').attr('src', 'image/UI/checked.png');
     $('.yellow').removeClass('crewHide');
   }
   list[11]=!list[11];
   console.log(num);
   dispNum.innerHTML="<span>参加者："+num+"人</span>";
 });
-$('.checkTan').on('click',function(){
+$('.checkDTan').on('click',function(){
   if(list[12]){
     num--;
-    $('.checkTan').attr('src', 'image/UI/checkNull.png');
+    $('.checktan').attr('src', 'image/UI/checkNull.png');
     $('.tan').addClass('crewHide');
   }else{
     num++;
-    $('.checkTan').attr('src', 'image/UI/checked.png');
+    $('.checktan').attr('src', 'image/UI/checked.png');
     $('.tan').removeClass('crewHide');
   }
   list[12]=!list[12];
   console.log(num);
   dispNum.innerHTML="<span>参加者："+num+"人</span>";
 });
-$('.checkCoral').on('click',function(){
+$('.checkDCoral').on('click',function(){
   if(list[13]){
     num--;
-    $('.checkCoral').attr('src', 'image/UI/checkNull.png');
+    $('.checkcoral').attr('src', 'image/UI/checkNull.png');
     $('.coral').addClass('crewHide');
   }else{
     num++;
-    $('.checkCoral').attr('src', 'image/UI/checked.png');
+    $('.checkcoral').attr('src', 'image/UI/checked.png');
     $('.coral').removeClass('crewHide');
   }
   list[13]=!list[13];
   console.log(num);
   dispNum.innerHTML="<span>参加者："+num+"人</span>";
 });
-$('.checkBanana').on('click',function(){
+$('.checkDBanana').on('click',function(){
   if(list[14]){
     num--;
-    $('.checkBanana').attr('src', 'image/UI/checkNull.png');
+    $('.checkbanana').attr('src', 'image/UI/checkNull.png');
     $('.banana').addClass('crewHide');
   }else{
     num++;
-    $('.checkBanana').attr('src', 'image/UI/checked.png');
+    $('.checkbanana').attr('src', 'image/UI/checked.png');
     $('.banana').removeClass('crewHide');
   }
   list[14]=!list[14];
   console.log(num);
   dispNum.innerHTML="<span>参加者："+num+"人</span>";
 });
-$('.checkRose').on('click',function(){
+$('.checkDRose').on('click',function(){
   if(list[15]){
     num--;
-    $('.checkRose').attr('src', 'image/UI/checkNull.png');
+    $('.checkrose').attr('src', 'image/UI/checkNull.png');
     $('.rose').addClass('crewHide');
   }else{
     num++;
-    $('.checkRose').attr('src', 'image/UI/checked.png');
+    $('.checkrose').attr('src', 'image/UI/checked.png');
     $('.rose').removeClass('crewHide');
   }
   list[15]=!list[15];
   console.log(num);
   dispNum.innerHTML="<span>参加者："+num+"人</span>";
 });
-$('.checkGray').on('click',function(){
+$('.checkDGray').on('click',function(){
   if(list[16]){
     num--;
-    $('.checkGray').attr('src', 'image/UI/checkNull.png');
+    $('.checkgray').attr('src', 'image/UI/checkNull.png');
     $('.gray').addClass('crewHide');
   }else{
     num++;
-    $('.checkGray').attr('src', 'image/UI/checked.png');
+    $('.checkgray').attr('src', 'image/UI/checked.png');
     $('.gray').removeClass('crewHide');
   }
   list[16]=!list[16];
   console.log(num);
   dispNum.innerHTML="<span>参加者："+num+"人</span>";
 });
-$('.checkMaroon').on('click',function(){
+$('.checkDMaroon').on('click',function(){
   if(list[17]){
     num--;
-    $('.checkMaroon').attr('src', 'image/UI/checkNull.png');
+    $('.checkmaroon').attr('src', 'image/UI/checkNull.png');
     $('.maroon').addClass('crewHide');
   }else{
     num++;
-    $('.checkMaroon').attr('src', 'image/UI/checked.png');
+    $('.checkmaroon').attr('src', 'image/UI/checked.png');
     $('.maroon').removeClass('crewHide');
   }
   list[17]=!list[17];
@@ -717,7 +718,7 @@ $('.Mtab6').on('click',function () {
     selectSize=5;
   });
   $('.blackP').on('click',function () {
-    selectColor="#3f484e";
+    selectColor="#25272a";
     $('.col').removeClass('add_col_choice');
     if(!$(this).hasClass('add_col_choice')){
       $(this).addClass('add_col_choice');
@@ -1075,6 +1076,8 @@ $('.Mtab6').on('click',function () {
 
 
   $('.reloadBox').on('click',function () {
+    localStorage.setItem('joinParum',list);
+    localStorage.setItem('joinNum',num);
     location.reload();
   });
 
