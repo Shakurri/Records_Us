@@ -123,7 +123,7 @@ $('.checkDBlack').on('click',function(){
     $('.black').removeClass('crewHide');
   }
   list[0]=!list[0];
-  console.log(num);
+  // console.log(num);
   dispNum.innerHTML="<span>参加者："+num+"人</span>";
 });
 $('.checkDBlue').on('click',function(){
@@ -137,7 +137,7 @@ $('.checkDBlue').on('click',function(){
     $('.blue').removeClass('crewHide');
   }
   list[1]=!list[1];
-  console.log(num);
+  // console.log(num);
   dispNum.innerHTML="<span>参加者："+num+"人</span>";
 });
 $('.checkDBrown').on('click',function(){
@@ -151,7 +151,7 @@ $('.checkDBrown').on('click',function(){
     $('.brown').removeClass('crewHide');
   }
   list[2]=!list[2];
-  console.log(num);
+  // console.log(num);
   dispNum.innerHTML="<span>参加者："+num+"人</span>";
 });
 $('.checkDGreen').on('click',function(){
@@ -165,7 +165,7 @@ $('.checkDGreen').on('click',function(){
     $('.green').removeClass('crewHide');
   }
   list[3]=!list[3];
-  console.log(num);
+  // console.log(num);
   dispNum.innerHTML="<span>参加者："+num+"人</span>";
 });
 $('.checkDLightblue').on('click',function(){
@@ -179,7 +179,7 @@ $('.checkDLightblue').on('click',function(){
     $('.lightblue').removeClass('crewHide');
   }
   list[4]=!list[4];
-  console.log(num);
+  // console.log(num);
   dispNum.innerHTML="<span>参加者："+num+"人</span>";
 });
 $('.checkDLime').on('click',function(){
@@ -193,7 +193,7 @@ $('.checkDLime').on('click',function(){
     $('.lime').removeClass('crewHide');
   }
   list[5]=!list[5];
-  console.log(num);
+  // console.log(num);
   dispNum.innerHTML="<span>参加者："+num+"人</span>";
 });
 $('.checkDOrange').on('click',function(){
@@ -207,7 +207,7 @@ $('.checkDOrange').on('click',function(){
     $('.orange').removeClass('crewHide');
   }
   list[6]=!list[6];
-  console.log(num);
+  // console.log(num);
   dispNum.innerHTML="<span>参加者："+num+"人</span>";
 });
 $('.checkDPink').on('click',function(){
@@ -221,7 +221,7 @@ $('.checkDPink').on('click',function(){
     $('.pink').removeClass('crewHide');
   }
   list[7]=!list[7];
-  console.log(num);
+  // console.log(num);
   dispNum.innerHTML="<span>参加者："+num+"人</span>";
 });
 $('.checkDPurple').on('click',function(){
@@ -235,7 +235,7 @@ $('.checkDPurple').on('click',function(){
     $('.purple').removeClass('crewHide');
   }
   list[8]=!list[8];
-  console.log(num);
+  // console.log(num);
   dispNum.innerHTML="<span>参加者："+num+"人</span>";
 });
 $('.checkDRed').on('click',function(){
@@ -249,7 +249,7 @@ $('.checkDRed').on('click',function(){
     $('.red').removeClass('crewHide');
   }
   list[9]=!list[9];
-  console.log(num);
+  // console.log(num);
   dispNum.innerHTML="<span>参加者："+num+"人</span>";
 });
 $('.checkDWhite').on('click',function(){
@@ -263,7 +263,7 @@ $('.checkDWhite').on('click',function(){
     $('.white').removeClass('crewHide');
   }
   list[10]=!list[10];
-  console.log(num);
+  // console.log(num);
   dispNum.innerHTML="<span>参加者："+num+"人</span>";
 });
 $('.checkDYellow').on('click',function(){
@@ -277,7 +277,7 @@ $('.checkDYellow').on('click',function(){
     $('.yellow').removeClass('crewHide');
   }
   list[11]=!list[11];
-  console.log(num);
+  // console.log(num);
   dispNum.innerHTML="<span>参加者："+num+"人</span>";
 });
 $('.checkDTan').on('click',function(){
@@ -291,7 +291,7 @@ $('.checkDTan').on('click',function(){
     $('.tan').removeClass('crewHide');
   }
   list[12]=!list[12];
-  console.log(num);
+  // console.log(num);
   dispNum.innerHTML="<span>参加者："+num+"人</span>";
 });
 $('.checkDCoral').on('click',function(){
@@ -305,7 +305,7 @@ $('.checkDCoral').on('click',function(){
     $('.coral').removeClass('crewHide');
   }
   list[13]=!list[13];
-  console.log(num);
+  // console.log(num);
   dispNum.innerHTML="<span>参加者："+num+"人</span>";
 });
 $('.checkDBanana').on('click',function(){
@@ -319,7 +319,7 @@ $('.checkDBanana').on('click',function(){
     $('.banana').removeClass('crewHide');
   }
   list[14]=!list[14];
-  console.log(num);
+  // console.log(num);
   dispNum.innerHTML="<span>参加者："+num+"人</span>";
 });
 $('.checkDRose').on('click',function(){
@@ -333,7 +333,7 @@ $('.checkDRose').on('click',function(){
     $('.rose').removeClass('crewHide');
   }
   list[15]=!list[15];
-  console.log(num);
+  // console.log(num);
   dispNum.innerHTML="<span>参加者："+num+"人</span>";
 });
 $('.checkDGray').on('click',function(){
@@ -347,7 +347,7 @@ $('.checkDGray').on('click',function(){
     $('.gray').removeClass('crewHide');
   }
   list[16]=!list[16];
-  console.log(num);
+  // console.log(num);
   dispNum.innerHTML="<span>参加者："+num+"人</span>";
 });
 $('.checkDMaroon').on('click',function(){
@@ -361,7 +361,7 @@ $('.checkDMaroon').on('click',function(){
     $('.maroon').removeClass('crewHide');
   }
   list[17]=!list[17];
-  console.log(num);
+  // console.log(num);
   dispNum.innerHTML="<span>参加者："+num+"人</span>";
 });
 

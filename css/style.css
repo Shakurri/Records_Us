@@ -165,12 +165,9 @@ body {
   height: 15%;
 }
 
-.player_tab .page .joinBox div .check {
-  cursor: pointer;
-}
-
 .player_tab .page .joinBox div img {
   width: 45%;
+  cursor: pointer;
 }
 
 .player_tab .page .joinBox span {

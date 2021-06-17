@@ -121,11 +121,13 @@ body{
                 text-align: center;
                 width:33%;
                 height:15%;
+                
                 .check{
-                    cursor: pointer;
+                    // cursor: pointer;
                 }
                 img{
                     width:45%;
+                    cursor: pointer;
                 }
             }
             span{
