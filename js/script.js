@@ -85,7 +85,9 @@
 var colName=['black','blue','brown','green','lightblue','lime','orange','pink','purple','red','white','yellow','tan','coral','banana','rose','gray','maroon'];
 var list=new Array(colName.length);
 var listP=localStorage.getItem("joinParum");
-var listPS=listP.split(",");
+if(listP===null){}else{
+  var listPS=listP.split(",");
+}
 var dispNum=document.getElementById('numOfplayer');
 // console.log(dispNum.innerHTML);
 var num=0;
