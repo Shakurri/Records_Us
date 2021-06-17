@@ -87,6 +87,7 @@ var list=new Array(colName.length);
 // var listP=localStorage.getItem("joinParum");
 // var listPS=listP.split(",");
 var dispNum=document.getElementById('numOfplayer');
+console.log(dispNum.innerHTML);
 var num=0;
 // var numP=localStorage.getItem("joinNum");
 for(let i=0;i<list.length;i++){
