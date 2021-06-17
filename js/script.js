@@ -1076,8 +1076,8 @@ $('.Mtab6').on('click',function () {
 
 
   $('.reloadBox').on('click',function () {
-    localStorage.setItem('joinParum',list);
-    localStorage.setItem('joinNum',num);
+    // localStorage.setItem('joinParum',list);
+    // localStorage.setItem('joinNum',num);
     location.reload();
   });
 
