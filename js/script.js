@@ -84,28 +84,28 @@
 
 var colName=['black','blue','brown','green','lightblue','lime','orange','pink','purple','red','white','yellow','tan','coral','banana','rose','gray','maroon'];
 var list=new Array(colName.length);
-var listP=localStorage.getItem("joinParum");
-var listPS=listP.split(",");
-var dispNum=document.getElementById('numOfplayer');
+// var listP=localStorage.getItem("joinParum");
+// var listPS=listP.split(",");
+// var dispNum=document.getElementById('numOfplayer');
 var num=0;
-var numP=localStorage.getItem("joinNum");
+// var numP=localStorage.getItem("joinNum");
 for(let i=0;i<list.length;i++){
   $('.'+colName[i]).addClass('crewHide');
   list[i]=false;
-  if(listP===null){}else{
-    if(JSON.parse(listPS[i].toLowerCase())){
-      list[i]=true;
-      $('.'+colName[i]).removeClass('crewHide');
-      $('.check'+colName[i]).attr('src', 'image/UI/checked.png');
-    }
-  }
-  if(numP===null){}else{
-    num=numP;
-    dispNum.innerHTML="<span>参加者："+num+"人</span>";
-  }
+  // if(listP===null){}else{
+  //   if(JSON.parse(listPS[i].toLowerCase())){
+  //     list[i]=true;
+  //     $('.'+colName[i]).removeClass('crewHide');
+  //     $('.check'+colName[i]).attr('src', 'image/UI/checked.png');
+  //   }
+  // }
+  // if(numP===null){}else{
+  //   num=numP;
+  //   dispNum.innerHTML="<span>参加者："+num+"人</span>";
+  // }
 }
-console.log(list);
-console.log(listPS);
+// console.log(list);
+// console.log(listPS);
 
 
 
