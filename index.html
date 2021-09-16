@@ -7,22 +7,22 @@
 	<meta name="msapplication-tap-highlight" content="no">
 	<title>RecordsUs</title>
 	<meta name="keywords" content="Among us,アマングアス,アモングアス,ツール,メモ">
-    <meta name="description" content="ゲーム「Among us」の簡易記録用ツールです。">
-    <link rel="icon" href="image/favicon.ico">
+	<meta name="description" content="ゲーム「Among us」の簡易記録用ツールです。">
+	<link rel="icon" href="image/favicon.ico">
 	<link rel="stylesheet" href="css/ress.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
 
-    <link rel="manifest" href="/manifest.json">
-    <script>
-        window.addEventListener('load', function() {
-            if ('serviceWorker' in navigator) {
-                navigator.serviceWorker.register("/serviceWorker.js");
-            }
-        });
-    </script>
+	<link rel="manifest" href="/manifest.json">
+	<script>
+		window.addEventListener('load', function () {
+			if ('serviceWorker' in navigator) {
+				navigator.serviceWorker.register("/serviceWorker.js");
+			}
+		});
+	</script>
 
 </head>
 <body>
@@ -48,10 +48,10 @@
 			<p class="title">Records_Us</p>
 			<p class="cl">制作 : @show_rain716</p>
 		</div>
-		
 
 
-		
+
+
 	</div>
 	<section class="player_tab">
 		<div class="Ptab">
@@ -61,7 +61,7 @@
 		<img class="reloadBox" src="image/reload.png">
 
 		<div class="page page0">
-			
+
 			<div class="statusBox">
 				<div class="zone z3"><span>黒め</span></div>
 				<div class="zone z1">
@@ -87,34 +87,52 @@
 						<img class="drag-and-drop c18 maroon" src="image/crewIcon/maroon.png">
 					</div>
 				</div>
-				
+
 				<div class="zone z2"><span>白め</span></div>
 				<div class="zone z4"><span>死亡</span></div>
 				<div class="zone z5"><span>吊り</span></div>
 			</div>
 			<div class="joinBox">
 				<span id="numOfplayer">参加者：0人</span>
-				<div class="checkDBlack"><img src="image/crewIcon/black.png"><img src="image/UI/checkNull.png" class="check checkblack"></div>
-				<div class="checkDBlue"><img src="image/crewIcon/blue.png"><img src="image/UI/checkNull.png" class="check checkblue"></div>
-				<div class="checkDBrown"><img src="image/crewIcon/brown.png"><img src="image/UI/checkNull.png" class="check checkbrown"></div>
-				<div class="checkDGreen"><img src="image/crewIcon/green.png"><img src="image/UI/checkNull.png" class="check checkgreen"></div>
-				<div class="checkDLightblue"><img src="image/crewIcon/lightblue.png"><img src="image/UI/checkNull.png" class="check checklightblue"></div>
-				<div class="checkDLime"><img src="image/crewIcon/lime.png"><img src="image/UI/checkNull.png" class="check checklime"></div>
-				<div class="checkDOrange"><img src="image/crewIcon/orange.png"><img src="image/UI/checkNull.png" class="check checkorange"></div>
-				<div class="checkDPink"><img src="image/crewIcon/pink.png"><img src="image/UI/checkNull.png" class="check checkpink"></div>
-				<div class="checkDPurple"><img src="image/crewIcon/purple.png"><img src="image/UI/checkNull.png" class="check checkpurple"></div>
-				<div class="checkDRed"><img src="image/crewIcon/red.png"><img src="image/UI/checkNull.png" class="check checkred"></div>
-				<div class="checkDWhite"><img src="image/crewIcon/white.png"><img src="image/UI/checkNull.png" class="check checkwhite"></div>
-				<div class="checkDYellow"><img src="image/crewIcon/yellow.png"><img src="image/UI/checkNull.png" class="check checkyellow"></div>
-				<div class="checkDTan"><img src="image/crewIcon/tan.png"><img src="image/UI/checkNull.png" class="check checktan"></div>
-				<div class="checkDCoral"><img src="image/crewIcon/coral.png"><img src="image/UI/checkNull.png" class="check checkcoral"></div>
-				<div class="checkDBanana"><img src="image/crewIcon/banana.png"><img src="image/UI/checkNull.png" class="check checkbanana"></div>
-				<div class="checkDRose"><img src="image/crewIcon/rose.png"><img src="image/UI/checkNull.png" class="check checkrose"></div>
-				<div class="checkDGray"><img src="image/crewIcon/gray.png"><img src="image/UI/checkNull.png" class="check checkgray"></div>
-				<div class="checkDMaroon"><img src="image/crewIcon/maroon.png"><img src="image/UI/checkNull.png" class="check checkmaroon"></div>
+				<div class="checkDBlack"><img src="image/crewIcon/black.png"><img src="image/UI/checkNull.png"
+						class="check checkblack"></div>
+				<div class="checkDBlue"><img src="image/crewIcon/blue.png"><img src="image/UI/checkNull.png"
+						class="check checkblue"></div>
+				<div class="checkDBrown"><img src="image/crewIcon/brown.png"><img src="image/UI/checkNull.png"
+						class="check checkbrown"></div>
+				<div class="checkDGreen"><img src="image/crewIcon/green.png"><img src="image/UI/checkNull.png"
+						class="check checkgreen"></div>
+				<div class="checkDLightblue"><img src="image/crewIcon/lightblue.png"><img src="image/UI/checkNull.png"
+						class="check checklightblue"></div>
+				<div class="checkDLime"><img src="image/crewIcon/lime.png"><img src="image/UI/checkNull.png"
+						class="check checklime"></div>
+				<div class="checkDOrange"><img src="image/crewIcon/orange.png"><img src="image/UI/checkNull.png"
+						class="check checkorange"></div>
+				<div class="checkDPink"><img src="image/crewIcon/pink.png"><img src="image/UI/checkNull.png"
+						class="check checkpink"></div>
+				<div class="checkDPurple"><img src="image/crewIcon/purple.png"><img src="image/UI/checkNull.png"
+						class="check checkpurple"></div>
+				<div class="checkDRed"><img src="image/crewIcon/red.png"><img src="image/UI/checkNull.png"
+						class="check checkred"></div>
+				<div class="checkDWhite"><img src="image/crewIcon/white.png"><img src="image/UI/checkNull.png"
+						class="check checkwhite"></div>
+				<div class="checkDYellow"><img src="image/crewIcon/yellow.png"><img src="image/UI/checkNull.png"
+						class="check checkyellow"></div>
+				<div class="checkDTan"><img src="image/crewIcon/tan.png"><img src="image/UI/checkNull.png"
+						class="check checktan"></div>
+				<div class="checkDCoral"><img src="image/crewIcon/coral.png"><img src="image/UI/checkNull.png"
+						class="check checkcoral"></div>
+				<div class="checkDBanana"><img src="image/crewIcon/banana.png"><img src="image/UI/checkNull.png"
+						class="check checkbanana"></div>
+				<div class="checkDRose"><img src="image/crewIcon/rose.png"><img src="image/UI/checkNull.png"
+						class="check checkrose"></div>
+				<div class="checkDGray"><img src="image/crewIcon/gray.png"><img src="image/UI/checkNull.png"
+						class="check checkgray"></div>
+				<div class="checkDMaroon"><img src="image/crewIcon/maroon.png"><img src="image/UI/checkNull.png"
+						class="check checkmaroon"></div>
 			</div>
 		</div>
-		
+
 	</section>
 	<section class="map_tab">
 		<div class="Mtab Mtab1 tabHide">
@@ -169,7 +187,7 @@
 
 					<img class="drag-and-drop rep" src="image/Report.png">
 				</div>
-				
+
 			</div>
 		</div>
 	</section>
@@ -281,7 +299,7 @@
 
 					<img class="drag-and-drop rep" src="image/Report.png">
 				</div>
-				
+
 			</div>
 		</div>
 	</section>
@@ -338,7 +356,7 @@
 
 					<img class="drag-and-drop rep" src="image/Report.png">
 				</div>
-				
+
 			</div>
 		</div>
 	</section>
@@ -395,7 +413,7 @@
 
 					<img class="drag-and-drop rep" src="image/Report.png">
 				</div>
-				
+
 			</div>
 		</div>
 	</section>
@@ -452,7 +470,7 @@
 
 					<img class="drag-and-drop rep" src="image/Report.png">
 				</div>
-				
+
 			</div>
 	</section>
 	<section class="matesBox">
@@ -480,6 +498,8 @@
 		<img src="image/mirahq.PNG" class="mirahqChange">
 		<img src="image/polus.PNG" class="polusChange">
 		<img src="image/airship.PNG" class="airshipChange">
+		<img src="image/submerged.png" class="submergedChange">
+
 	</section>
 	<script type="text/javascript" src="js/script.js"></script>
 </body>
