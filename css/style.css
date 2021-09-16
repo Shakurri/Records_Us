@@ -1,21 +1,21 @@
 @charset "UTF-8";
 @font-face {
-  font-family: 'yasashisa';
+  font-family: "yasashisa";
   src: url(../font/07やさしさゴシック.ttf);
 }
 
 @font-face {
-  font-family: 'rogotype';
+  font-family: "rogotype";
   src: url(../font/ロゴたいぷゴシック.otf);
 }
 
 @font-face {
-  font-family: 'marumonica';
+  font-family: "marumonica";
   src: url(../font/MaruMonica.ttf);
 }
 
 body {
-  font-family: 'rogotype';
+  font-family: "rogotype";
   background-color: #111;
   overflow: hidden;
 }
@@ -45,7 +45,7 @@ body {
 .error .messageBox .message1 {
   width: 80vw;
   font-size: 6.5vw;
-  font-family: 'marumonica';
+  font-family: "marumonica";
   color: #ccc;
 }
 
@@ -53,7 +53,7 @@ body {
   margin-left: 4vw;
   width: 80vw;
   font-size: 4vw;
-  font-family: 'marumonica';
+  font-family: "marumonica";
   color: #888;
 }
 
@@ -69,13 +69,13 @@ body {
 }
 
 .error .titleBox .title {
-  font-family: 'marumonica';
+  font-family: "marumonica";
   color: #bbb;
   font-size: 5vw;
 }
 
 .error .titleBox .cl {
-  font-family: 'marumonica';
+  font-family: "marumonica";
   color: #888;
   font-size: 3vw;
 }
@@ -581,14 +581,14 @@ body {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 18vw;
-  height: 9vh;
+  width: 21vw;
+  height: 10vh;
   background-color: #777;
   border-radius: 5px 0 0 0;
 }
 
 .mapChangeBox img {
-  width: 24%;
+  width: 19%;
   max-height: 80%;
   -webkit-filter: drop-shadow(0 3px 0 rgba(0, 0, 0, 0.2));
           filter: drop-shadow(0 3px 0 rgba(0, 0, 0, 0.2));

@@ -1,475 +1,470 @@
-@font-face{
-	font-family: 'yasashisa';
-	src:url(../font/07やさしさゴシック.ttf);
+@font-face {
+  font-family: "yasashisa";
+  src: url(../font/07やさしさゴシック.ttf);
 }
-@font-face{
-	font-family: 'rogotype';
-	src:url(../font/ロゴたいぷゴシック.otf);
+@font-face {
+  font-family: "rogotype";
+  src: url(../font/ロゴたいぷゴシック.otf);
 }
-@font-face{
-	font-family: 'marumonica';
-	src:url(../font/MaruMonica.ttf);
+@font-face {
+  font-family: "marumonica";
+  src: url(../font/MaruMonica.ttf);
 }
-body{
-    font-family: 'rogotype';
-    background-color:#111;
-    overflow: hidden;
+body {
+  font-family: "rogotype";
+  background-color: #111;
+  overflow: hidden;
+}
 
-}
-
-.error{
+.error {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #333;
+  z-index: 5000;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  .messageBox {
+    width: 80vw;
+    .message1 {
+      width: 80vw;
+      font-size: 6.5vw;
+      font-family: "marumonica";
+      color: #ccc;
+    }
+    .message2 {
+      margin-left: 4vw;
+      width: 80vw;
+      font-size: 4vw;
+      font-family: "marumonica";
+      color: #888;
+    }
+    .space {
+      height: 5vw;
+      width: 100vw;
+    }
+  }
+  .titleBox {
     position: absolute;
-	top:0;
-	left:0;
-	width:100vw;
-	height:100vh;
-    background-color: #333;
-    z-index: 5000;
+    bottom: 5vh;
+    text-align: center;
+    .title {
+      font-family: "marumonica";
+      color: #bbb;
+      font-size: 5vw;
+    }
+    .cl {
+      font-family: "marumonica";
+      color: #888;
+      font-size: 3vw;
+    }
+  }
+}
+@media (orientation: landscape) {
+  .error {
+    display: none;
+  }
+}
+.reloadBox {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 5vw;
+  z-index: 200;
+}
+.player_tab {
+  position: absolute;
+  top: 0;
+  left: 0;
+  .Ptab {
+    cursor: pointer;
+    position: absolute;
+    z-index: 150;
+    background-color: #555;
+    border-radius: 5px 5px 0 0;
+    margin-top: 1vh;
+    width: 25vw;
+    height: 9vh;
+    left: 6vw;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    .messageBox{
-        width: 80vw;;
-        .message1{
-            width:80vw;
-            font-size: 6.5vw;
-            font-family: 'marumonica';
-            color: #ccc;
-        }
-        .message2{
-            margin-left:4vw;
-            width:80vw;
-            font-size: 4vw;
-            font-family: 'marumonica';
-            color: #888;
-        }
-        .space{
-            height:5vw;
-            width: 100vw;
-        }
+    border-bottom: dotted 2px #222;
+    span {
+      font-size: 2vw;
     }
-    .titleBox{
-        position: absolute;
-        bottom:5vh;
-        text-align: center;
-        .title{
-            font-family: 'marumonica';
-            color: #bbb;
-            font-size: 5vw;
-        }
-        .cl{
-            font-family: 'marumonica';
-            color: #888;
-            font-size: 3vw;
-        }
-    }
-}
-@media(orientation:landscape){
-    .error{
-        display:none;
-    }
-}
-.reloadBox{
-	position: absolute;
-	top:-1px;
-	left:-1px;
-	width:5vw;
-    z-index: 200;
-}
-.player_tab{
-    position: absolute;
-    top:0;
-    left:0;
-	.Ptab{
-        cursor: pointer;
-        position: absolute;
-        z-index: 150;
-        background-color: #555;
-        border-radius: 5px 5px 0 0;
-        margin-top:1vh;
-		width:25vw;
-		height:9vh;
-        left: 6vw;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        border-bottom: dotted 2px #222;
-        span{
-            font-size: 2vw;
-        }
-
-	}
-	.page{
-		background-color:#555;
-		width:100vw;
-		height:70vh;
-        margin-top:10vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        .joinBox{
-            border: solid 4px #333;
-            border-radius: 5px;
-            width:26%;
-            height:66vh;
-            margin:0 1%;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            div{
-                text-align: center;
-                width:33%;
-                height:15%;
-                
-                .check{
-                    // cursor: pointer;
-                }
-                img{
-                    width:45%;
-                    cursor: pointer;
-                }
-            }
-            span{
-                text-align: center;
-                font-size: 1.8vw;
-                width:100%;
-            }
-        }
-        .statusBox{
-            height:65vh;
-            width:68%;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            .zone{
-                background-color: #333;
-                height:22%;
-                width:98%;
-                border-radius: 10px;
-                span{
-                    margin-left: 1vw;
-                    color:gray;
-                    width:90%;
-                    height:30%;
-
-                    font-size: 2vw;
-                }
-                .crewBox{
-                    width:100%;
-                    height:60%;
-                    
-                    position: relative;
-                    img{
-                        height:100%;
-                    }
-                }
-                
-            }
-            .z1{
-                background-color: #333;
-            }
-            .z2{
-                background-color: #444;
-            }
-            .z3{
-                background-color: #222;
-            }
-            .z4{
-                background-color: #422;
-                width:58%;
-            }
-            .z5{
-                background-color: #311;
-                width:38%;
-            }
-        }
-	}
-}
-
-.map_tab{
-    position:absolute;
-    top:0;
-    left:0;
-    .Mtab{
-        z-index: 150;
-        border-radius: 5px 5px 0 0;
-        margin-top:1vh;
-        cursor: pointer;
-    }
-    .Mtab1{
-        position: absolute;
-        background-color: #555;
-		width:10vw;
-		height:9vh;
-        left: 33vw;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        border-bottom: dotted 2px #222;
-        span{
-            font-size: 2vw;
-        }
-	}
-    .Mtab2{
-        position: absolute;
-        background-color: #555;
-		width:10vw;
-		height:9vh;
-        left: 44vw;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        border-bottom: dotted 2px #222;
-        span{
-            font-size: 2vw;
-        }
-	}
-    .Mtab3{
-        position: absolute;
-        background-color: #555;
-		width:10vw;
-		height:9vh;
-        left: 55vw;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        border-bottom: dotted 2px #222;
-        span{
-            font-size: 2vw;
-        }
-	}
-    .Mtab4{
-        position: absolute;
-        background-color: #555;
-		width:10vw;
-		height:9vh;
-        left: 66vw;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        border-bottom: dotted 2px #222;
-        span{
-            font-size: 2vw;
-        }
-	}
-    .Mtab5{
-        position: absolute;
-        background-color: #555;
-		width:10vw;
-		height:9vh;
-        left: 77vw;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        border-bottom: dotted 2px #222;
-        span{
-            font-size: 2vw;
-        }
-	}
-    .Mtab6{
-        position: absolute;
-        background-color: #555;
-		width:10vw;
-		height:9vh;
-        left: 88vw;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        border-bottom: dotted 2px #222;
-        span{
-            font-size: 2vw;
-        }
-	}
-    .page{
-		background-color:#555;
-		width:100vw;
-		height:70vh;
-        margin-top:10vh;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        .mapCan{
-            position:absolute;
-            top:0;
-            left:0;
-            width:100vw;
-            height:100vh;
-            z-index: 100;
-        }
-        .mapBox{
-            height:100%;
-            max-width:70vw;
-            filter: saturate(0%) contrast(80%) ;
-        }
-        .paintBox{
-            z-index:200;
-            width:28vw;
-            height:90%;
-            display: flex;
-                align-items: center;
-                justify-content: space-around;
-                flex-wrap: wrap;
-            .colorBox{
-                
-                border-radius: 5px;
-                display: flex;
-                align-items: center;
-                justify-content: space-around;
-                flex-wrap: wrap;
-                width:75%;
-                height:35%;
-                padding:5%;
-                background-color: #333;
-                div{
-                    width:15%;
-                    height:30%;
-                    border-radius: 2px;
-                    cursor: pointer;
-                }
-                .brownP{
-                    background-color: #72491e;
-                }
-                .blackP{
-                    background-color: #25272a;
-                }
-                .blueP{
-                    background-color: #132fd2;
-                }
-                .greenP{
-                    background-color: #127f2d;
-                }
-                .lightblueP{
-                    background-color: #39fedb;
-                }
-                .limeP{
-                    background-color: #50ef3a;
-                }
-                .orangeP{
-                    background-color: #ef7d0e;
-                }
-                .pinkP{
-                    background-color: #ed53b9;
-                }
-                .purpleP{
-                    background-color: #6b30bc;
-                }
-                .redP{
-                    background-color: #c51111;
-                }
-                .whiteP{
-                    background-color: #dfeffb;
-                }
-                .yellowP{
-                    background-color: #f5f558;
-                }
-                .tanP{
-                    background-color: #969682;
-                }
-                .coralP{
-                    background-color: #d28278;
-                }
-                .bananaP{
-                    background-color: #f0e6b4;
-                }
-                .roseP{
-                    background-color: #e6d2dc;
-                }
-                .grayP{
-                    background-color: #828ca0;
-                }
-                .maroonP{
-                    background-color: #82001e;
-                }
-            }
-            .eraceBox{
-                width:20%;
-                text-align: center;
-                cursor: pointer;
-                img{
-                    width:70%;
-                    filter:contrast(150%);
-                }
-            }
-            .crewBox{
-                width:100%;
-                height:40%;
-                position: relative;
-                img{
-                    width:3.5vw;
-                }
-                .rep{
-                    top:6vw;
-                    left:24vw;
-                    z-index: 120;
-                    width:4vw;
-                }
-            }
-        }
-    }
-}
-
-.matesBox{
-    position: absolute;
-    bottom:0;
-    display: flex;
-    img{
-        width:4.7vw;
-        height:6vw;
-        z-index:120;
-        cursor:pointer;
-    }
-}
-
-.mapChangeBox{
-    z-index: 150;
-    position: absolute;
-    bottom:0;
-    right:0;
+  }
+  .page {
+    background-color: #555;
+    width: 100vw;
+    height: 70vh;
+    margin-top: 10vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-    width:18vw;
-    height:9vh;
-    background-color: #777;
-    border-radius: 5px 0 0 0;
-    img{
-        width:24%;
-        max-height:80%;
-        filter:drop-shadow(0 3px 0 rgba(0, 0, 0, 0.2));
-        cursor: pointer;
+    .joinBox {
+      border: solid 4px #333;
+      border-radius: 5px;
+      width: 26%;
+      height: 66vh;
+      margin: 0 1%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      div {
+        text-align: center;
+        width: 33%;
+        height: 15%;
+
+        .check {
+          // cursor: pointer;
+        }
+        img {
+          width: 45%;
+          cursor: pointer;
+        }
+      }
+      span {
+        text-align: center;
+        font-size: 1.8vw;
+        width: 100%;
+      }
     }
+    .statusBox {
+      height: 65vh;
+      width: 68%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      .zone {
+        background-color: #333;
+        height: 22%;
+        width: 98%;
+        border-radius: 10px;
+        span {
+          margin-left: 1vw;
+          color: gray;
+          width: 90%;
+          height: 30%;
+
+          font-size: 2vw;
+        }
+        .crewBox {
+          width: 100%;
+          height: 60%;
+
+          position: relative;
+          img {
+            height: 100%;
+          }
+        }
+      }
+      .z1 {
+        background-color: #333;
+      }
+      .z2 {
+        background-color: #444;
+      }
+      .z3 {
+        background-color: #222;
+      }
+      .z4 {
+        background-color: #422;
+        width: 58%;
+      }
+      .z5 {
+        background-color: #311;
+        width: 38%;
+      }
+    }
+  }
+}
+
+.map_tab {
+  position: absolute;
+  top: 0;
+  left: 0;
+  .Mtab {
+    z-index: 150;
+    border-radius: 5px 5px 0 0;
+    margin-top: 1vh;
+    cursor: pointer;
+  }
+  .Mtab1 {
+    position: absolute;
+    background-color: #555;
+    width: 10vw;
+    height: 9vh;
+    left: 33vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: dotted 2px #222;
+    span {
+      font-size: 2vw;
+    }
+  }
+  .Mtab2 {
+    position: absolute;
+    background-color: #555;
+    width: 10vw;
+    height: 9vh;
+    left: 44vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: dotted 2px #222;
+    span {
+      font-size: 2vw;
+    }
+  }
+  .Mtab3 {
+    position: absolute;
+    background-color: #555;
+    width: 10vw;
+    height: 9vh;
+    left: 55vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: dotted 2px #222;
+    span {
+      font-size: 2vw;
+    }
+  }
+  .Mtab4 {
+    position: absolute;
+    background-color: #555;
+    width: 10vw;
+    height: 9vh;
+    left: 66vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: dotted 2px #222;
+    span {
+      font-size: 2vw;
+    }
+  }
+  .Mtab5 {
+    position: absolute;
+    background-color: #555;
+    width: 10vw;
+    height: 9vh;
+    left: 77vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: dotted 2px #222;
+    span {
+      font-size: 2vw;
+    }
+  }
+  .Mtab6 {
+    position: absolute;
+    background-color: #555;
+    width: 10vw;
+    height: 9vh;
+    left: 88vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: dotted 2px #222;
+    span {
+      font-size: 2vw;
+    }
+  }
+  .page {
+    background-color: #555;
+    width: 100vw;
+    height: 70vh;
+    margin-top: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .mapCan {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 100;
+    }
+    .mapBox {
+      height: 100%;
+      max-width: 70vw;
+      filter: saturate(0%) contrast(80%);
+    }
+    .paintBox {
+      z-index: 200;
+      width: 28vw;
+      height: 90%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      .colorBox {
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 75%;
+        height: 35%;
+        padding: 5%;
+        background-color: #333;
+        div {
+          width: 15%;
+          height: 30%;
+          border-radius: 2px;
+          cursor: pointer;
+        }
+        .brownP {
+          background-color: #72491e;
+        }
+        .blackP {
+          background-color: #25272a;
+        }
+        .blueP {
+          background-color: #132fd2;
+        }
+        .greenP {
+          background-color: #127f2d;
+        }
+        .lightblueP {
+          background-color: #39fedb;
+        }
+        .limeP {
+          background-color: #50ef3a;
+        }
+        .orangeP {
+          background-color: #ef7d0e;
+        }
+        .pinkP {
+          background-color: #ed53b9;
+        }
+        .purpleP {
+          background-color: #6b30bc;
+        }
+        .redP {
+          background-color: #c51111;
+        }
+        .whiteP {
+          background-color: #dfeffb;
+        }
+        .yellowP {
+          background-color: #f5f558;
+        }
+        .tanP {
+          background-color: #969682;
+        }
+        .coralP {
+          background-color: #d28278;
+        }
+        .bananaP {
+          background-color: #f0e6b4;
+        }
+        .roseP {
+          background-color: #e6d2dc;
+        }
+        .grayP {
+          background-color: #828ca0;
+        }
+        .maroonP {
+          background-color: #82001e;
+        }
+      }
+      .eraceBox {
+        width: 20%;
+        text-align: center;
+        cursor: pointer;
+        img {
+          width: 70%;
+          filter: contrast(150%);
+        }
+      }
+      .crewBox {
+        width: 100%;
+        height: 40%;
+        position: relative;
+        img {
+          width: 3.5vw;
+        }
+        .rep {
+          top: 6vw;
+          left: 24vw;
+          z-index: 120;
+          width: 4vw;
+        }
+      }
+    }
+  }
+}
+
+.matesBox {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  img {
+    width: 4.7vw;
+    height: 6vw;
+    z-index: 120;
+    cursor: pointer;
+  }
+}
+
+.mapChangeBox {
+  z-index: 150;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 21vw;
+  height: 10vh;
+  background-color: #777;
+  border-radius: 5px 0 0 0;
+  img {
+    width: 19%;
+    max-height: 80%;
+    filter: drop-shadow(0 3px 0 rgba(0, 0, 0, 0.2));
+    cursor: pointer;
+  }
 }
 
 .drag-and-drop {
-    cursor: move;
-    position: absolute;
-    z-index: 100;
+  cursor: move;
+  position: absolute;
+  z-index: 100;
 }
 
 .drag {
-    z-index: 101;
+  z-index: 101;
 }
 
+.crewHide {
+  display: none !important;
+}
+.tabHide {
+  background-color: #222 !important;
+}
+.pageHide {
+  display: none !important;
+}
 
-.crewHide{
-    display: none !important;
-}
-.tabHide{
-    background-color: #222 !important;
-}
-.pageHide{
-    display: none !important;
-}
-
-.add_col_choice{
-	outline: 2px solid rgba(255,255,255,0.7);
+.add_col_choice {
+  outline: 2px solid rgba(255, 255, 255, 0.7);
 }
 
 $i: 1;
-$wid:3.4vw;
+$wid: 3.4vw;
 
 @while $i <= 18 {
   .c#{$i} {
@@ -479,32 +474,28 @@ $wid:3.4vw;
 }
 
 $j: 0;
-$wid:4vw;
+$wid: 4vw;
 @while $j <= 5 {
-    .cc#{$j+1} {
-      left: $wid * $j;
-    }
-    $j: $j + 1;
+  .cc#{$j + 1} {
+    left: $wid * $j;
   }
+  $j: $j + 1;
+}
 $k: 0;
-$wid:4vw;
+$wid: 4vw;
 @while $k <= 5 {
-    .cc#{($k+7)} {
-      left: $wid * $k;
-      top:5vw;
-    }
-    $k: $k + 1;
+  .cc#{($k+7)} {
+    left: $wid * $k;
+    top: 5vw;
   }
+  $k: $k + 1;
+}
 $l: 0;
-$wid:4vw;
+$wid: 4vw;
 @while $l <= 5 {
-    .cc#{($l+13)} {
-      left: $wid * $l;
-      top:10vw;
-    }
-    $l: $l + 1;
+  .cc#{($l+13)} {
+    left: $wid * $l;
+    top: 10vw;
   }
-
-
-
-
+  $l: $l + 1;
+}
