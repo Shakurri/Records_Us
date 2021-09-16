@@ -910,170 +910,242 @@ $('.Mtab6').on('click',function () {
 
   var isDead=new Array(18);
   for(var i=0;i<18;i++){
-    isDead[i]=false;
+    isDead[i]="button";
   }
 
 
   $('.uMates1').on('click',function(){
-    if(isDead[0]){
+    if(isDead[0]=="button"){
       $('.black').attr('src', 'image/crewIcon/black.png');
-      isDead[0]=false;
-    }else{
+      isDead[0]="normal";
+    }else if(isDead[0]=="normal"){
       $('.black').attr('src', 'image/deadIcon/blackD.PNG');
-      isDead[0]=true;
+      isDead[0]="dead";
+    } else {
+      $('.black').attr('src', 'image/crewIcon/black.png');
+      $('.uMates1').attr('src', 'image/buttonIcon/blackB.PNG');
+      isDead[0]="button";
     }
   });
   $('.uMates2').on('click',function(){
-    if(isDead[1]){
+    if(isDead[1]=="button"){
       $('.blue').attr('src', 'image/crewIcon/blue.png');
-      isDead[1]=false;
-    }else{
+      isDead[1]="normal";
+    }else if(isDead[1]=="normal"){
       $('.blue').attr('src', 'image/deadIcon/blueD.PNG');
-      isDead[1]=true;
+      isDead[1]="dead";
+    }else{
+      $('.blue').attr('src', 'image/crewIcon/blue.png');
+      $('.uMates2').attr('src', 'image/buttonIcon/blueB.PNG');
+     isDead[1]="button";
     }
   });
   $('.uMates3').on('click',function(){
-    if(isDead[2]){
+    if(isDead[2]=="button"){
       $('.brown').attr('src', 'image/crewIcon/brown.png');
-      isDead[2]=false;
-    }else{
+      isDead[2]="normal";
+    }else if(isDead[2]=="normal"){
       $('.brown').attr('src', 'image/deadIcon/brownD.PNG');
-      isDead[2]=true;
+      isDead[2]="dead";
+    }else{
+      $('.brown').attr('src', 'image/crewIcon/brown.png');
+      $('.uMates3').attr('src', 'image/buttonIcon/brownB.PNG');
+     isDead[2]="button";
     }
   });
   $('.uMates4').on('click',function(){
-    if(isDead[3]){
+    if(isDead[3]=="button"){
       $('.green').attr('src', 'image/crewIcon/green.png');
-      isDead[3]=false;
-    }else{
+      isDead[3]="normal";
+    }else if(isDead[3]=="normal"){
       $('.green').attr('src', 'image/deadIcon/greenD.PNG');
-      isDead[3]=true;
+      isDead[3]="dead";
+    }else{
+      $('.green').attr('src', 'image/crewIcon/green.png');
+      $('.uMates4').attr('src', 'image/buttonIcon/greenB.PNG');
+     isDead[3]="button";
     }
   });
   $('.uMates5').on('click',function(){
-    if(isDead[4]){
+    if(isDead[4]=="button"){
       $('.lightblue').attr('src', 'image/crewIcon/lightblue.png');
-      isDead[4]=false;
-    }else{
+      isDead[4]="normal";
+    }else if(isDead[4]=="normal"){
       $('.lightblue').attr('src', 'image/deadIcon/lightblueD.PNG');
-      isDead[4]=true;
+      isDead[4]="dead";
+    }else{
+      $('.lightblue').attr('src', 'image/crewIcon/lightblue.png');
+      $('.uMates5').attr('src', 'image/buttonIcon/lightblueB.PNG');
+     isDead[4]="button";
     }
   });
   $('.uMates6').on('click',function(){
-    if(isDead[5]){
+    if(isDead[5]=="button"){
       $('.lime').attr('src', 'image/crewIcon/lime.png');
-      isDead[5]=false;
-    }else{
+      isDead[5]="normal";
+    }else if(isDead[5]=="normal"){
       $('.lime').attr('src', 'image/deadIcon/limeD.PNG');
-      isDead[5]=true;
+      isDead[5]="dead";
+    }else{
+      $('.lime').attr('src', 'image/crewIcon/lime.png');
+      $('.uMates6').attr('src', 'image/buttonIcon/limeB.PNG');
+     isDead[5]="button";
     }
   });
   $('.uMates7').on('click',function(){
-    if(isDead[6]){
+    if(isDead[6]=="button"){
       $('.orange').attr('src', 'image/crewIcon/orange.png');
-      isDead[6]=false;
-    }else{
+      isDead[6]="normal";
+    }else if(isDead[6]=="normal"){
       $('.orange').attr('src', 'image/deadIcon/orangeD.PNG');
-      isDead[6]=true;
+      isDead[6]="dead";
+    }else{
+      $('.orange').attr('src', 'image/crewIcon/orange.png');
+      $('.uMates7').attr('src', 'image/buttonIcon/orangeB.PNG');
+     isDead[6]="button";
     }
   });
   $('.uMates8').on('click',function(){
-    if(isDead[7]){
+    if(isDead[7]=="button"){
       $('.pink').attr('src', 'image/crewIcon/pink.png');
-      isDead[7]=false;
-    }else{
+      isDead[7]="normal";
+    }else if(isDead[7]=="normal"){
       $('.pink').attr('src', 'image/deadIcon/pinkD.PNG');
-      isDead[7]=true;
+      isDead[7]="dead";
+    }else{
+      $('.pink').attr('src', 'image/crewIcon/pink.png');
+      $('.uMates8').attr('src', 'image/buttonIcon/pinkB.PNG');
+     isDead[7]="button";
     }
   });
   $('.uMates9').on('click',function(){
-    if(isDead[8]){
+    if(isDead[8]=="button"){
       $('.purple').attr('src', 'image/crewIcon/purple.png');
-      isDead[8]=false;
-    }else{
+      isDead[8]="normal";
+    }else if(isDead[8]=="normal"){
       $('.purple').attr('src', 'image/deadIcon/purpleD.PNG');
-      isDead[8]=true;
+      isDead[8]="dead";
+    }else{
+      $('.purple').attr('src', 'image/crewIcon/purple.png');
+      $('.uMates9').attr('src', 'image/buttonIcon/purpleB.PNG');
+     isDead[8]="button";
     }
   });
   $('.uMates10').on('click',function(){
-    if(isDead[9]){
+    if(isDead[9]=="button"){
       $('.red').attr('src', 'image/crewIcon/red.png');
-      isDead[9]=false;
-    }else{
+      isDead[9]="normal";
+    }else if(isDead[9]=="normal"){
       $('.red').attr('src', 'image/deadIcon/redD.PNG');
-      isDead[9]=true;
+      isDead[9]="dead";
+    }else{
+      $('.red').attr('src', 'image/crewIcon/red.png');
+      $('.uMates10').attr('src', 'image/buttonIcon/redB.PNG');
+     isDead[9]="button";
     }
   });
   $('.uMates11').on('click',function(){
-    if(isDead[10]){
+    if(isDead[10]=="button"){
       $('.white').attr('src', 'image/crewIcon/white.png');
-      isDead[10]=false;
-    }else{
+      isDead[10]="normal";
+    }else if(isDead[10]=="normal"){
       $('.white').attr('src', 'image/deadIcon/whiteD.PNG');
-      isDead[10]=true;
+      isDead[10]="dead";
+    }else{
+      $('.white').attr('src', 'image/crewIcon/white.png');
+      $('.uMates11').attr('src', 'image/buttonIcon/whiteB.PNG');
+      isDead[10]="button";
     }
   });
   $('.uMates12').on('click',function(){
-    if(isDead[11]){
+    if(isDead[11]=="button"){
       $('.yellow').attr('src', 'image/crewIcon/yellow.png');
-      isDead[11]=false;
-    }else{
+      isDead[11]="normal";
+    }else if(isDead[11]=="normal"){
       $('.yellow').attr('src', 'image/deadIcon/yellowD.PNG');
-      isDead[11]=true;
+      isDead[11]="dead";
+    }else{
+      $('.yellow').attr('src', 'image/crewIcon/yellow.png');
+      $('.uMates12').attr('src', 'image/buttonIcon/yellowB.PNG');
+      isDead[11]="button";
     }
   });
   $('.uMates13').on('click',function(){
-    if(isDead[12]){
+    if(isDead[12]=="button"){
       $('.tan').attr('src', 'image/crewIcon/tan.png');
-      isDead[12]=false;
-    }else{
+      isDead[12]="normal";
+    }else if(isDead[12]=="normal"){
       $('.tan').attr('src', 'image/deadIcon/tanD.PNG');
-      isDead[12]=true;
+      isDead[12]="dead";
+    }else{
+      $('.tan').attr('src', 'image/crewIcon/tan.png');
+      $('.uMates13').attr('src', 'image/buttonIcon/tanB.PNG');
+      isDead[12]="button";
     }
   });
   $('.uMates14').on('click',function(){
-    if(isDead[13]){
+    if(isDead[13]=="button"){
       $('.coral').attr('src', 'image/crewIcon/coral.png');
-      isDead[13]=false;
-    }else{
+      isDead[13]="normal";
+    }else if(isDead[13]=="normal"){
       $('.coral').attr('src', 'image/deadIcon/coralD.PNG');
-      isDead[13]=true;
+      isDead[13]="dead";
+    }else{
+      $('.coral').attr('src', 'image/crewIcon/coral.png');
+      $('.uMates14').attr('src', 'image/buttonIcon/coralB.PNG');
+      isDead[13]="button";
     }
   });
   $('.uMates15').on('click',function(){
-    if(isDead[14]){
+    if(isDead[14]=="button"){
       $('.banana').attr('src', 'image/crewIcon/banana.png');
-      isDead[14]=false;
-    }else{
+      isDead[14]="normal";
+    }else if(isDead[14]=="normal"){
       $('.banana').attr('src', 'image/deadIcon/bananaD.PNG');
-      isDead[14]=true;
+      isDead[14]="dead";
+    }else{
+      $('.banana').attr('src', 'image/crewIcon/banana.png');
+      $('.uMates15').attr('src', 'image/buttonIcon/bananaB.PNG');
+      isDead[14]="button";
     }
   });
   $('.uMates16').on('click',function(){
-    if(isDead[15]){
+    if(isDead[15]=="button"){
       $('.rose').attr('src', 'image/crewIcon/rose.png');
-      isDead[15]=false;
-    }else{
+      isDead[15]="normal";
+    }else if(isDead[15]=="normal"){
       $('.rose').attr('src', 'image/deadIcon/roseD.PNG');
-      isDead[15]=true;
+      isDead[15]="dead";
+    }else{
+      $('.rose').attr('src', 'image/crewIcon/rose.png');
+      $('.uMates16').attr('src', 'image/buttonIcon/roseB.PNG');
+      isDead[15]="button";
     }
   });
   $('.uMates17').on('click',function(){
-    if(isDead[16]){
+    if(isDead[16]=="button"){
       $('.gray').attr('src', 'image/crewIcon/gray.png');
-      isDead[16]=false;
-    }else{
+      isDead[16]="normal";
+    }else if(isDead[16]=="normal"){
       $('.gray').attr('src', 'image/deadIcon/grayD.PNG');
-      isDead[16]=true;
+      isDead[16]="dead";
+    }else{
+      $('.gray').attr('src', 'image/crewIcon/gray.png');
+      $('.uMates17').attr('src', 'image/buttonIcon/grayB.PNG');
+      isDead[16]="button";
     }
   });
   $('.uMates18').on('click',function(){
-    if(isDead[17]){
+    if(isDead[17]=="button"){
       $('.maroon').attr('src', 'image/crewIcon/maroon.png');
-      isDead[17]=false;
-    }else{
+      isDead[17]="normal";
+    }else if(isDead[17]=="normal"){
       $('.maroon').attr('src', 'image/deadIcon/maroonD.PNG');
-      isDead[17]=true;
+      isDead[17]="dead";
+    }else{
+      $('.maroon').attr('src', 'image/crewIcon/maroon.png');
+      $('.uMates18').attr('src', 'image/buttonIcon/maroonB.PNG');
+      isDead[17]="button";
     }
   });
 
