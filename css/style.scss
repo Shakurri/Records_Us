@@ -296,8 +296,9 @@ body {
       z-index: 100;
     }
     .mapBox {
-      height: 100%;
-      max-width: 70vw;
+      height: 70vh;
+      width: 70vw;
+      object-fit: contain;
       filter: saturate(0%) contrast(80%);
     }
     .paintBox {

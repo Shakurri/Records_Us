@@ -402,8 +402,10 @@ body {
 }
 
 .map_tab .page .mapBox {
-  height: 100%;
-  max-width: 70vw;
+  height: 70vh;
+  width: 70vw;
+  -o-object-fit: contain;
+     object-fit: contain;
   -webkit-filter: saturate(0%) contrast(80%);
           filter: saturate(0%) contrast(80%);
 }
